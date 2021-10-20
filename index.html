@@ -12,18 +12,137 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="styles/tailwind.css">
-    <title>React App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet"></link> 
+
+    <title>Strum style</title>
+
+    <style>
+      html {
+        font-family: Manrope, ui-sans-serif, system-ui;
+        line-height: 1.5;
+
+        scroll-behavior: smooth;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        padding: 40px;
+      }
+
+      section {
+        background: rgb(247, 247, 247);
+      }
+
+      .box {
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .box h1 {
+        width: 100%; 
+        font-weight: 300;
+        padding: 16px;
+        background: #f3f3f3;
+        text-transform: uppercase;
+      }
+      .box .content {
+        width: 100%; 
+        font-weight: 300;
+        padding: 16px;
+        font-size: 12px;
+        background: #fff;
+        min-height: 200px;
+      }
+
+      ol {
+        padding: 16px 0px;
+      }
+      a li {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 12px;
+      }
+    </style>
   </head>
-  <body>
+  <body class="h-screen w-screen flex flex-row">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <nav class=' w-60 flex flex-col p-8'>
+      <h1 class=" font-bold w-full uppercase">
+        Strum styles
+      </h1>
+
+      <ol>
+        <a href="#typography"><li> typography </li></a>
+        <a href="#info"><li> info </li></a>
+        <a href="#color"><li> color </li></a>
+      </ol>
+    </nav>
     
-    <div class=' bg-primary'>
+    <!-- <div class=' bg-primary'>
       hi
     </div>
     
     <div>
+      <hr/>
+        <a href="styles/index.css" download>Show css file</a>
+      <hr/>
+    </div> -->
+    <section class=" h-full overflow-auto w-full">
+      <div class="box" id="info">
+        <h1 class=" ">
+          info
+        </h1>
+        <div class="content">
+      
+        </div>
+      </div>
 
-      <a href='./styles/index.css' target="_blank">downloads</a>
-    </div>
+      <div class="box" id="typography">
+        <h1 class=" ">
+          typography
+        </h1>
+        <div class="content">
+          
+        </div>
+      </div>
+
+
+      <div class="box" id="color">
+        <h1 class=" ">
+          color
+        </h1>
+        <div class="content flex flex-row flex-wrap space-x-4">
+          <div>
+            <div class=" w-10 h-10 rounded-lg bg-primary"> </div>    
+            Primary #3B5FE0
+          </div>
+
+
+          <div>
+            <div class=" w-10 h-10 rounded-lg bg-secondary"> </div>    
+            Secondary #439CEF
+          </div>
+
+
+          <div>
+            <div class=" w-10 h-10 rounded-lg bg-gray"> </div>    
+            Gray #D4D4D8
+          </div>
+
+
+          <div>
+            <div class=" w-10 h-10 rounded-lg bg-black"> </div>    
+            Black #2B3139
+          </div>
+        </div>
+      </div>
+
+    </section>
   </body>
 </html>
