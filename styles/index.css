@@ -1,3 +1,29 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+
+
+.typo-tiny {
+  @apply text-xs;
+}
+
+.typo-small {
+  @apply text-sm;
+}
+
+.typo-body {
+  @apply text-base;
+}
+
+.typo-subtitle {
+  @apply text-lg;
+}
+
+.typo-title {
+  @apply text-xl;
+}
+
+.bold {
+  @apply font-bold;
+}

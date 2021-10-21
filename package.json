@@ -10,7 +10,7 @@
     "tailwindcss": "^2.2.2"
   },
   "scripts": {
-    "build:style": "tailwind build -i ./src/styles/index.css -o ./src/styles/tailwind.css"
+    "build:style": "tailwind build -i ./styles/index.css -o ./styles/tailwind.css"
     
   },
   "browserslist": {

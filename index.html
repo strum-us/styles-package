@@ -2,15 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="strum - style "
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="styles/tailwind.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +51,7 @@
       .box .content {
         width: 100%; 
         font-weight: 300;
-        padding: 16px;
+        padding: 20px;
         font-size: 12px;
         background: #fff;
         min-height: 200px;
@@ -69,80 +67,157 @@
       }
     </style>
   </head>
-  <body class="h-screen w-screen flex flex-row">
+  <body class="flex flex-row w-screen h-screen">
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <nav class=' w-60 flex flex-col p-8'>
-      <h1 class=" font-bold w-full uppercase">
+    <nav class='flex flex-col p-8 w-60'>
+      <h1 class="w-full font-bold uppercase ">
         Strum styles
       </h1>
 
       <ol>
-        <a href="#typography"><li> typography </li></a>
         <a href="#info"><li> info </li></a>
+        <a href="#typography"><li> typography </li></a>
         <a href="#color"><li> color </li></a>
+        <a href="#card"><li> card </li></a>
+        <a href="#template"><li> template </li></a>
       </ol>
     </nav>
     
-    <!-- <div class=' bg-primary'>
-      hi
-    </div>
-    
-    <div>
-      <hr/>
-        <a href="styles/index.css" download>Show css file</a>
-      <hr/>
-    </div> -->
-    <section class=" h-full overflow-auto w-full">
+    <section class="w-full h-full overflow-auto ">
+      <!-- Info -->
       <div class="box" id="info">
-        <h1 class=" ">
+        <h1 class="">
           info
         </h1>
         <div class="content">
-      
+          TODO ...
         </div>
       </div>
 
+
+      <!-- Typography -->
       <div class="box" id="typography">
-        <h1 class=" ">
-          typography
+        <h1 class="">
+          typography 
         </h1>
-        <div class="content">
-          
+        <div class="flex flex-col space-y-2 content">
+          <button onclick="copyFontStype()">
+            copy font
+           </button>
+          <div class="flex flex-row typo-tiny">
+            <p class="w-40 "> typo-tiny </p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          </div>
+          <div class="flex flex-row typo-small">
+            <p class="w-40 ">typo-small</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          </div>
+          <div class="flex flex-row typo-body">
+            <p class="w-40 ">typo-body</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          </div>
+          <div class="flex flex-row typo-subtitle">
+            <p class="w-40 ">typo-subtitle</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          </div>
+          <div class="flex flex-row typo-title">
+            <p class="w-40 ">typo-title</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          </div>
         </div>
       </div>
 
 
+      <!-- Color -->
       <div class="box" id="color">
-        <h1 class=" ">
+        <h1 class="">
           color
         </h1>
-        <div class="content flex flex-row flex-wrap space-x-4">
+        <div class="flex flex-row flex-wrap space-x-4 content">
           <div>
-            <div class=" w-10 h-10 rounded-lg bg-primary"> </div>    
+            <div class="w-10 h-10 rounded-lg bg-primary"> </div>    
             Primary #3B5FE0
           </div>
 
 
           <div>
-            <div class=" w-10 h-10 rounded-lg bg-secondary"> </div>    
+            <div class="w-10 h-10 rounded-lg bg-secondary"> </div>    
             Secondary #439CEF
           </div>
 
 
           <div>
-            <div class=" w-10 h-10 rounded-lg bg-gray"> </div>    
+            <div class="w-10 h-10 rounded-lg bg-gray"> </div>    
             Gray #D4D4D8
           </div>
 
 
           <div>
-            <div class=" w-10 h-10 rounded-lg bg-black"> </div>    
+            <div class="w-10 h-10 bg-black rounded-lg "> </div>    
             Black #2B3139
           </div>
         </div>
       </div>
 
+
+      <!-- Card -->
+      <div class="box" id="card">
+        <h1 class="">
+          Card
+        </h1>
+        <div class="content">
+          
+          <div class="flex flex-row overflow-auto rounded-lg shadow-lg" style="max-height: max-content; max-width: 400px;">
+              <img src="./sample-image.png" class="object-cover " style="max-width: 100px;" alt="card image">
+              <div class="flex flex-col p-4 space-y-1">
+                <p class=" typo-subtitle bold">
+                  Isaac shared screen capture
+                </p>
+                <p class=" typo-tiny">
+                  SSS
+                </p>
+                <p class=" typo-body">
+                  We need an explanation of dsdd sdStreamworWe  expla...  more
+                </p>
+              </div>
+          </div>
+
+          <div class="flex flex-col overflow-auto rounded-lg shadow-lg" style="max-height: max-content; max-width: 200px;">
+            <img src="./sample-image.png" class="object-cover " style=" " alt="card image">
+            <div class="flex flex-col p-4 space-y-1">
+              <p class="w-full truncate typo-subtitle bold">
+                Isaac shared screen capture
+              </p>
+              <p class=" typo-tiny">
+                SSS
+              </p>
+              <p class="w-full truncate typo-body">
+                We need an explanation of dsdd sdStreamworWe  expla...  more
+              </p>
+            </div>
+        </div>
+        </div>
+      </div>
+            
+      <!-- Template -->
+      <div class="box" id="info">
+        <h1 class="">
+          Template
+        </h1>
+        <div class="content">
+          Template ...
+        </div>
+      </div>
+
+
     </section>
+    <script>
+      function copyFontStype() {
+        const fontfile = `
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet"></link>       
+        `
+        navigator.clipboard.writeText(fontfile);
+        console.log(fontfile)
+      }
+
+    </script>
   </body>
 </html>
