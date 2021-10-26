@@ -22,11 +22,18 @@ module.exports = {
     outline: false,
   },
   theme: {
+    boxShadow: {
+      default: '0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 3px rgba(0, 0, 0, 0.1)',
+      'md': '0px 0px 4px rgba(0, 0, 0, 0.06), 0px 0px 6px rgba(0, 0, 0, 0.1)',
+      'lg': '0px 0px 15px rgba(0, 0, 0, 0.1), 0px 0px 6px rgba(0, 0, 0, 0.05)',
+      'xl': '0px 0px 25px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.04)',
+      '2xl': '0px 0px 50px rgba(0, 0, 0, 0.25)',
+    },
     fontFamily: {
       'sans': ['Manrope', 'ui-sans-serif', 'system-ui'],
       'serif': ['ui-serif', 'Georgia'],
       'mono': ['ui-monospace', 'SFMono-Regular'],
-     },
+    },
     colors: {
       primary: {
         light: '#3B5FE0',
@@ -38,15 +45,14 @@ module.exports = {
       },
       black: '#2B3139',
       secondary: '#439CEF',
-      gray: '#D4D4D8',
+      // gray: '#D4D4D8',
       white: '#ffffff',
       warn: '#F9B249',
       success: '#4BD059',
-      dim: {
-        light: colors.gray[100],
-        border: colors.gray[200],
-        sub: colors.gray[400],
-        DEFAULT: colors.gray[500],
+      gray: {
+        light: colors.gray[300],
+        DEFAULT: colors.gray[400],
+        dark: colors.gray[500],
       },
       // gray: colors.gray,
       blue: colors.blue,

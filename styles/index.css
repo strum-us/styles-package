@@ -17,7 +17,7 @@
 }
 
 .typo-subtitle {
-  @apply text-lg;
+  @apply text-lg font-bold;
 }
 
 .typo-title {
@@ -27,3 +27,39 @@
 .bold {
   @apply font-bold;
 }
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             Modal                                                 --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+/* modal */
+.modal-container{
+  @apply py-8 bg-white shadow-lg rounded-2xl;
+  width: 25rem;
+}
+.modal-alert{
+  width: 20rem;
+}
+
+
+.modal-inner{
+  @apply px-10;
+}
+.modal-header{
+  @apply  text-black typo-subtitle;
+}
+.modal-body{
+  @apply text-gray-dark typo-body;
+}
+.modal-footer{
+  @apply typo-subtitle;
+}
+
+
+
+/* menu */
