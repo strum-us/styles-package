@@ -25,7 +25,7 @@
 }
 
 .bold {
-  @apply font-bold;
+  @apply font-bold ;
 }
 
 
@@ -38,26 +38,34 @@
 
 
 /* modal */
-.modal-container{
+.modal-container-lg{
   @apply py-8 bg-white shadow-lg rounded-2xl;
   width: 25rem;
 }
-.modal-alert{
+.modal-container-sm{
+  @apply py-8 bg-white shadow-lg rounded-2xl;
   width: 20rem;
 }
+.modal-container-sm .modal-body{
+  @apply py-0;
+}
+.modal-container-sm .modal-footer{
+  @apply flex flex-row justify-end space-x-2 pt-9;
+}
+
 
 
 .modal-inner{
   @apply px-10;
 }
 .modal-header{
-  @apply  text-black typo-subtitle;
+  @apply  pb-4 text-black typo-subtitle;
 }
 .modal-body{
-  @apply text-gray-dark typo-body;
+  @apply py-10 space-y-6 text-gray-dark typo-body ;
 }
 .modal-footer{
-  @apply typo-subtitle;
+  @apply pb-8 typo-subtitle ;
 }
 
 
