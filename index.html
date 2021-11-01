@@ -72,24 +72,165 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <nav class='flex flex-col p-8 w-60'>
-      <h1 class="w-full font-bold uppercase ">
+      <h1 class="w-full mb-4 font-bold uppercase">
         Strum styles
       </h1>
 
-      <ol>
+      <ul class="flex flex-col pl-2 space-y-2 font-light typo-small text-gray-dark">
+        <li><a href="#info">info</a></li>
+        <li><a href="#typography">typography</a></li>
+        <li><a href="#color">color</a></li>
+        <li><a href="#card">card</a></li>
+        <li><a href="#template">template</a></li>
+      </ul>
+
+      <!-- <ol>
         <a href="#info"><li> info </li></a>
         <a href="#typography"><li> typography </li></a>
         <a href="#color"><li> color </li></a>
         <a href="#card"><li> card </li></a>
         <a href="#template"><li> template </li></a>
-      </ol>
+      </ol> -->
     </nav>
     
 
     
     <section class="w-full h-full overflow-auto ">
-  <!-- Template -->
-  <div class="box" id="template">
+  
+
+
+
+      <!-- Info -->
+      <div class="box" id="info">
+        <h1 class="">
+          info
+        </h1>
+        <div class="content">
+          <p class="mb-3 font-bold typo-title">구성요소</p>
+          <p class="typo-body">스트럼은  tailwindcss를 사용 중입니다. <a href="https://tailwindcss.com/">tailwindcss</a>를 참고하세요. 가급적 이 곳에 있는 UI 요소를 사용하는 곳을 권장합니다.</p>
+        </div>
+      </div>
+
+      
+      <!-- Typography -->
+      <div class="box" id="typography">
+        <h1 class="">
+          typography 
+        </h1>
+        <div class="flex flex-col space-y-2 content">
+          <button onclick="copyFontStype()">
+            copy font
+          </button>
+          <p class="typo-title ">'manrupe'</p>
+          <div class="flex-row w-full flax">
+            <div>
+              <p>Scale Category</p>
+              <ul>
+                <li class="typo-title">typo-title</li>
+              </ul>
+
+            </div>
+            <div>Font</div>
+            <div>Size</div>
+            <!-- <div>Lign height</div> -->
+
+          </div>
+          <div>
+
+          </div>
+
+          <!-- <div class="flex flex-row typo-tiny">
+            <p class="w-40 "> typo-tiny </p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          </div>
+          <div class="flex flex-row typo-small">
+            <p class="w-40 ">typo-small</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          </div>
+          <div class="flex flex-row typo-body">
+            <p class="w-40 ">typo-body</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          </div>
+          <div class="flex flex-row typo-subtitle">
+            <p class="w-40 ">typo-subtitle</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          </div>
+          <div class="flex flex-row typo-title">
+            <p class="w-40 ">typo-title</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          </div>
+        </div> -->
+      </div>
+
+
+      <!-- Color -->
+      <div class="box" id="color">
+        <h1 class="">
+          color
+        </h1>
+        <div class="flex flex-row flex-wrap space-x-4 content">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-primary"> </div>    
+            Primary #3B5FE0
+          </div>
+
+
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-secondary"> </div>    
+            Secondary #439CEF
+          </div>
+
+
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-gray"> </div>    
+            Gray #D4D4D8
+          </div>
+
+
+          <div>
+            <div class="w-10 h-10 bg-black rounded-lg "> </div>    
+            Black #2B3139
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Card -->
+      <div class="box" id="card">
+        <h1 class="">
+          Card
+        </h1>
+        <div class="content">
+          
+          <div class="flex flex-row overflow-auto rounded-lg shadow-lg" style="max-height: max-content; max-width: 400px;">
+              <img src="./sample-image.png" class="object-cover " style="max-width: 100px;" alt="card image">
+              <div class="flex flex-col p-4 space-y-1">
+                <p class=" typo-subtitle bold">
+                  Isaac shared screen capture
+                </p>
+                <p class=" typo-tiny">
+                  SSS
+                </p>
+                <p class=" typo-body">
+                  We need an explanation of dsdd sdStreamworWe  expla...  more
+                </p>
+              </div>
+          </div>
+
+          <div class="flex flex-col overflow-auto rounded-lg shadow-lg" style="max-height: max-content; max-width: 200px;">
+            <img src="./sample-image.png" class="object-cover " style=" " alt="card image">
+            <div class="flex flex-col p-4 space-y-1">
+              <p class="w-full truncate typo-subtitle bold">
+                Isaac shared screen capture
+              </p>
+              <p class=" typo-tiny">
+                SSS
+              </p>
+              <p class="w-full truncate typo-body">
+                We need an explanation of dsdd sdStreamworWe  expla...  more
+              </p>
+            </div>
+        </div>
+        </div>
+      </div>
+          
+<!-- Template -->
+<div class="box" id="template">
   <h1 class="">
     Template
   </h1>
@@ -175,120 +316,6 @@
     </div>
   </div>
 </div>
-
-
-
-      <!-- Info -->
-      <div class="box" id="info">
-        <h1 class="">
-          info
-        </h1>
-        <div class="content">
-          TODO ...
-        </div>
-      </div>
-
-      
-      <!-- Typography -->
-      <div class="box" id="typography">
-        <h1 class="">
-          typography 
-        </h1>
-        <div class="flex flex-col space-y-2 content">
-          <button onclick="copyFontStype()">
-            copy font
-           </button>
-          <div class="flex flex-row typo-tiny">
-            <p class="w-40 "> typo-tiny </p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-          </div>
-          <div class="flex flex-row typo-small">
-            <p class="w-40 ">typo-small</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-          </div>
-          <div class="flex flex-row typo-body">
-            <p class="w-40 ">typo-body</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-          </div>
-          <div class="flex flex-row typo-subtitle">
-            <p class="w-40 ">typo-subtitle</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-          </div>
-          <div class="flex flex-row typo-title">
-            <p class="w-40 ">typo-title</p> Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Color -->
-      <div class="box" id="color">
-        <h1 class="">
-          color
-        </h1>
-        <div class="flex flex-row flex-wrap space-x-4 content">
-          <div>
-            <div class="w-10 h-10 rounded-lg bg-primary"> </div>    
-            Primary #3B5FE0
-          </div>
-
-
-          <div>
-            <div class="w-10 h-10 rounded-lg bg-secondary"> </div>    
-            Secondary #439CEF
-          </div>
-
-
-          <div>
-            <div class="w-10 h-10 rounded-lg bg-gray"> </div>    
-            Gray #D4D4D8
-          </div>
-
-
-          <div>
-            <div class="w-10 h-10 bg-black rounded-lg "> </div>    
-            Black #2B3139
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Card -->
-      <div class="box" id="card">
-        <h1 class="">
-          Card
-        </h1>
-        <div class="content">
-          
-          <div class="flex flex-row overflow-auto rounded-lg shadow-lg" style="max-height: max-content; max-width: 400px;">
-              <img src="./sample-image.png" class="object-cover " style="max-width: 100px;" alt="card image">
-              <div class="flex flex-col p-4 space-y-1">
-                <p class=" typo-subtitle bold">
-                  Isaac shared screen capture
-                </p>
-                <p class=" typo-tiny">
-                  SSS
-                </p>
-                <p class=" typo-body">
-                  We need an explanation of dsdd sdStreamworWe  expla...  more
-                </p>
-              </div>
-          </div>
-
-          <div class="flex flex-col overflow-auto rounded-lg shadow-lg" style="max-height: max-content; max-width: 200px;">
-            <img src="./sample-image.png" class="object-cover " style=" " alt="card image">
-            <div class="flex flex-col p-4 space-y-1">
-              <p class="w-full truncate typo-subtitle bold">
-                Isaac shared screen capture
-              </p>
-              <p class=" typo-tiny">
-                SSS
-              </p>
-              <p class="w-full truncate typo-body">
-                We need an explanation of dsdd sdStreamworWe  expla...  more
-              </p>
-            </div>
-        </div>
-        </div>
-      </div>
-          
-
 
       
 
