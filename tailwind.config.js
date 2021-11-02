@@ -49,12 +49,12 @@ module.exports = {
       white: '#ffffff',
       warn: '#F9B249',
       success: '#4BD059',
-      gray: {
-        light: colors.gray[300],
-        DEFAULT: colors.gray[400],
-        dark: colors.gray[500],
-      },
-      // gray: colors.gray,
+      // gray: {
+      //   light: colors.gray[300],
+      //   DEFAULT: colors.gray[400],
+      //   dark: colors.gray[500],
+      // },
+      gray: colors.gray,
       blue: colors.blue,
       red: colors.red,
       green: colors.green,

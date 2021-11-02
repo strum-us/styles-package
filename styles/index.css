@@ -36,8 +36,7 @@
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
 
-
-/* modal */
+/* modal
 .modal-container-lg{
   @apply py-8 bg-white shadow-lg rounded-2xl;
   width: 25rem;
@@ -67,7 +66,7 @@
 .modal-footer{
   @apply pb-8 typo-subtitle ;
 }
-
+ */
 
 
 /* menu */
@@ -81,13 +80,9 @@
 /* --------------------------------------------------------------------------------------------------------- */
 
 .btn {
-  @apply h-10 p-4 cursor-pointer max-w-max bg-primary;
+  @apply flex flex-row items-center h-10 p-4 rounded-lg cursor-pointer max-w-max bg-primary;
 }
 
-
-.btn.full {
-  @apply w-full;
-}
 
 .btn.full {
   @apply w-full;
@@ -100,4 +95,135 @@
 }
 
 
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             Modal                                                 --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
 
+
+.nav{
+  @apply flex flex-col h-screen bg-white;
+  min-width: 240px;
+}
+.modal .nav{
+  min-width: 240px;
+}
+.nav-header{
+  @apply flex items-center h-16 px-5 mb-4 text-gray-600 typo-body;
+  border-bottom: 1px solid #D4D4D8;
+}
+.nav-header:hover{
+  @apply bg-gray-100;
+}
+.nav-section{
+  @apply px-4 mt-4 mb-1 text-gray-500 typo-small;
+}
+.nav-footer{
+  @apply flex items-center h-16 px-5 text-gray-600 typo-body;
+  border-top: 1px solid #D4D4D8;
+}
+.nav-footer:hover{
+  @apply bg-gray-100;
+}
+.nav-item{
+  @apply flex flex-row items-center h-10 px-5;
+  
+}
+.nav-item:hover{
+  @apply bg-gray-100 ;
+}
+.nav-item-icon{
+  @apply mr-2 text-gray-600 fill-current;
+}
+
+.nav-item-text{
+  @apply text-gray-600 typo-body;
+}
+
+
+
+.modal{
+  @apply flex flex-row overflow-hidden border rounded-lg shadow-lg;
+  width: 1000px;
+}
+.modal.sm{
+  width: 400px;
+}
+.modal-body{
+  @apply flex flex-col w-full bg-gray-100 ;
+  
+}
+.modal.sm > .modal-body{
+  @apply bg-white;
+}
+.modal-body-header{
+  @apply px-10 mt-10 font-black typo-title;
+}
+.modal-body-divider{
+  @apply mx-auto my-5 bg-gray-300;
+  width: 90%;
+  height: 1px;
+}
+.modal-body-title{
+  @apply px-16 mb-4 text-gray-800 typo-subtitle;
+}
+.modal-body-sub-title{
+  @apply px-20 text-gray-600 typo-body;
+}
+.modal-body-footer{
+  @apply px-16 ;
+}
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             dropdown                                              --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.dropdown{
+  @apply flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50;
+}
+.dropdown-item{
+  @apply flex flex-row items-center px-5 py-5 place-content-between;
+}
+.dropdown-item:hover{
+  @apply bg-gray-200;
+}
+/* new class name-dropdown-item-title(자식들도 같이 바뀜) */
+.dropdown-item-title{
+  @apply flex items-center w-full space-x-2;
+}
+.dropdown-item-title-icon{
+  @apply text-gray-600 fill-current;
+}
+.dropdown-item-title-text{
+  @apply text-gray-800 typo-body;
+}
+.dropdown-item-subtext{
+  @apply text-gray-400 typo-tiny;
+}
+.dropdown-divider{
+  @apply w-full mx-auto my-5 bg-gray-300;
+  height: 1px;
+}
+.dropdown-item-form{
+  @apply flex flex-row px-5 py-5 space-x-2 place-content-between;
+}
+.input{
+  @apply flex flex-row items-center w-full h-10 px-2 text-gray-400 border border-gray-300 rounded-lg bg-gray-50 typo-small;
+}
+.input:focus-within{
+  @apply text-gray-800 bg-white border-primary;
+}
+:focus{
+  outline: none;
+}
+.input-body{
+  @apply flex flex-row items-center w-full;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             card                                                  --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
