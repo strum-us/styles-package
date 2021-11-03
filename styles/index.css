@@ -183,6 +183,9 @@
 .nav-header:hover{
   @apply bg-gray-100;
 }
+.nav-header:active{
+  @apply bg-gray-200;
+}
 .nav-section{
   @apply px-4 mt-4 mb-1 text-gray-500 typo-small;
 }
@@ -193,12 +196,18 @@
 .nav-footer:hover{
   @apply bg-gray-100;
 }
+.nav-footer:active{
+  @apply bg-gray-200;
+}
 .nav-item{
   @apply flex flex-row items-center h-10 px-5;
   
 }
 .nav-item:hover{
   @apply bg-gray-100 ;
+}
+.nav-item:active{
+  @apply bg-gray-200 ;
 }
 .nav-item-icon{
   @apply mr-2 text-gray-600 fill-current;
