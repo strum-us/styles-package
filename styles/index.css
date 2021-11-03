@@ -71,6 +71,11 @@
 
 /* menu */
 
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             Input                                                 --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
 
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -206,10 +211,11 @@
 
 
 .modal{
-  @apply flex flex-row overflow-hidden border rounded-lg shadow-lg;
+  @apply flex flex-row overflow-hidden bg-white border shadow-lg rounded-xl;
   width: 1000px;
 }
 .modal.sm{
+  @apply py-4;
   width: 400px;
 }
 .modal-body{
@@ -243,7 +249,7 @@
 /* --------------------------------------------------------------------------------------------------------- */
 
 .dropdown{
-  @apply flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50;
+  @apply flex flex-col overflow-hidden shadow-lg rounded-xl bg-gray-50;
 }
 .dropdown-item{
   @apply flex flex-row items-center px-5 py-5 place-content-between;
