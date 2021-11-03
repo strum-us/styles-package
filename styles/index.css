@@ -3,6 +3,11 @@
 @import "tailwindcss/utilities";
 
 
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             typo                                                  --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
 
 .typo-tiny {
   @apply text-xs;
@@ -76,6 +81,21 @@
 /* ---                                             Input                                                 --- */
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
+.input{
+  @apply flex flex-row items-center w-full h-10 px-2 text-gray-400 border border-gray-300 rounded-lg bg-gray-50 typo-small;
+}
+.input.disabled{
+  @apply text-gray-300 bg-gray-100;
+}
+.input:focus-within{
+  @apply text-gray-800 bg-white border-primary;
+}
+:focus{
+  outline: none;
+}
+.input-body{
+  @apply flex flex-row items-center w-full;
+}
 
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -155,11 +175,11 @@
 }
 
 
-/* 
+
 .btn.negative {
   background: #ff0000 !important;
   @apply bg-negative;
-}   */
+}   
 
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -177,7 +197,7 @@
   min-width: 240px;
 }
 .nav-header{
-  @apply flex items-center h-16 px-5 mb-4 text-gray-600 typo-body;
+  @apply flex items-center h-16 px-5 mb-4 text-gray-600 cursor-pointer select-none typo-body;
   border-bottom: 1px solid #D4D4D8;
 }
 .nav-header:hover{
@@ -190,7 +210,7 @@
   @apply px-4 mt-4 mb-1 text-gray-500 typo-small;
 }
 .nav-footer{
-  @apply flex items-center h-16 px-5 text-gray-600 typo-body;
+  @apply flex items-center h-16 px-5 text-gray-600 cursor-pointer select-none typo-body;
   border-top: 1px solid #D4D4D8;
 }
 .nav-footer:hover{
@@ -200,7 +220,7 @@
   @apply bg-gray-200;
 }
 .nav-item{
-  @apply flex flex-row items-center h-10 px-5;
+  @apply flex flex-row items-center h-10 px-5 cursor-pointer select-none;
   
 }
 .nav-item:hover{
@@ -261,7 +281,7 @@
   @apply flex flex-col overflow-hidden shadow-lg rounded-xl bg-gray-50;
 }
 .dropdown-item{
-  @apply flex flex-row items-center px-5 py-5 place-content-between;
+  @apply flex flex-row items-center px-5 py-5 cursor-pointer select-none place-content-between;
 }
 .dropdown-item:hover{
   @apply bg-gray-200;
@@ -285,18 +305,6 @@
 }
 .dropdown-item-form{
   @apply flex flex-row px-5 py-5 space-x-2 place-content-between;
-}
-.input{
-  @apply flex flex-row items-center w-full h-10 px-2 text-gray-400 border border-gray-300 rounded-lg bg-gray-50 typo-small;
-}
-.input:focus-within{
-  @apply text-gray-800 bg-white border-primary;
-}
-:focus{
-  outline: none;
-}
-.input-body{
-  @apply flex flex-row items-center w-full;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
