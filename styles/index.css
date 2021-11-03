@@ -80,19 +80,81 @@
 /* --------------------------------------------------------------------------------------------------------- */
 
 .btn {
-  @apply flex flex-row items-center h-10 p-4 rounded-lg cursor-pointer max-w-max bg-primary;
+  @apply flex flex-row items-center h-10 px-4 space-x-1 text-gray-500 border border-gray-300 rounded-lg cursor-pointer select-none typo-small bg-gray-50 max-w-max ;
 }
-
-
+.btn:hover{
+  @apply bg-gray-200;
+}
+.btn:active{
+  @apply bg-gray-300;
+}
+.btn svg{
+  @apply py-2.5;
+}
+.btn.disabled{
+  @apply bg-gray-50 text-gray-300
+}
+.btn.lg{
+  @apply h-12 px-6 space-x-2 typo-subtitle;
+}
+.btn.lg svg{
+  @apply py-3;
+}
+.btn.sm{
+  @apply h-8 px-3 space-x-1 typo-tiny;
+}
+.btn.sm svg{
+  @apply py-2;
+}
 .btn.full {
   @apply w-full;
 }
-
-
-.btn-negative {
-  /* background: #ff0000 !important; */
-  @apply bg-negative;
+.btn.negative:hover{
+  @apply bg-red-100 border-negative text-negative; 
 }
+.btn.negative:active{
+  @apply bg-red-200;
+}
+.btn.primary{
+  @apply bg-blue-100 border-primary text-primary;
+}
+.btn.primary.disabled{
+  @apply text-blue-400 bg-blue-100 border-blue-400;
+}
+.btn.primary:hover{
+  @apply bg-blue-200 border-primary text-primary;
+}
+.btn.primary:active{
+  @apply bg-blue-300;
+}
+.btn.solid{
+  @apply text-white border-0 bg-primary;
+}
+.btn.solid:hover{
+  @apply bg-blue-700;
+}
+.btn.solid:active{
+  @apply bg-blue-800;
+}
+.btn.ghost{
+  @apply text-gray-500 bg-white bg-opacity-0 border-0;
+}
+.btn.ghost.disabled{
+  @apply text-gray-300 bg-gray-50;
+}
+.btn.ghost:hover{
+  @apply bg-gray-100;
+}
+.btn.ghost:active{
+  @apply bg-gray-200;
+}
+
+
+/* 
+.btn.negative {
+  background: #ff0000 !important;
+  @apply bg-negative;
+}   */
 
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -169,7 +231,7 @@
   @apply px-16 mb-4 text-gray-800 typo-subtitle;
 }
 .modal-body-sub-title{
-  @apply px-20 text-gray-600 typo-body;
+  @apply px-16 text-gray-600 typo-body;
 }
 .modal-body-footer{
   @apply px-16 ;
