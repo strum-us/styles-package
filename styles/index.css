@@ -32,7 +32,9 @@
 .bold {
   @apply font-bold ;
 }
-
+.medium{
+  @apply font-medium;
+}
 
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -73,8 +75,20 @@
 }
  */
 
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             divider                                                 --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+.divider-h{
+  @apply w-full bg-gray-300;
+  height: 1px;
+}
+.divider-v{
+  @apply h-full bg-gray-300;
+  width: 1px;
+}
 
-/* menu */
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* ---                                                                                                   --- */
@@ -82,13 +96,22 @@
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
 .input{
-  @apply flex flex-row items-center w-full h-10 px-2 text-gray-400 border border-gray-300 rounded-lg bg-gray-50 typo-small;
+  @apply box-border flex flex-row items-center w-full h-10 px-2 text-gray-400 border border-gray-300 rounded-lg cursor-pointer typo-small bg-gray-50;
+}
+.input.lg{
+  @apply h-12 typo-subtitle medium px-3
 }
 .input.disabled{
-  @apply text-gray-300 bg-gray-100;
+  @apply text-gray-300 bg-gray-100 cursor-default select-none;
 }
 .input:focus-within{
   @apply text-gray-800 bg-white border-primary;
+}
+.input.success:focus-within{
+  @apply border-success;
+}
+.input.negative:focus-within{
+  @apply bg-red-100 border-negative text-negative;
 }
 :focus{
   outline: none;
@@ -98,6 +121,20 @@
 }
 
 
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             textarea                                              --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.textarea{
+  @apply box-border h-32 px-5 py-5 text-gray-800 border border-gray-300 resize-none bg-gray-50 typo-small rounded-xl cursor-text;
+}
+
+
+
+
 /* --------------------------------------------------------------------------------------------------------- */
 /* ---                                                                                                   --- */
 /* ---                                             Button                                                 --- */
@@ -105,7 +142,8 @@
 /* --------------------------------------------------------------------------------------------------------- */
 
 .btn {
-  @apply flex flex-row items-center h-10 px-4 space-x-1 text-gray-500 border border-gray-300 rounded-lg cursor-pointer select-none typo-small bg-gray-50 max-w-max ;
+  @apply box-border flex flex-row items-center justify-center h-10 px-4 space-x-1 text-gray-500 transition-all duration-200 border border-gray-300 rounded-lg cursor-pointer select-none typo-small bg-gray-50 ;
+  /* @apply max-w-max; */
 }
 .btn:hover{
   @apply bg-gray-200;
@@ -117,7 +155,7 @@
   @apply py-2.5;
 }
 .btn.disabled{
-  @apply bg-gray-50 text-gray-300
+  @apply text-gray-300 bg-gray-50;
 }
 .btn.lg{
   @apply h-12 px-6 space-x-2 typo-subtitle;
@@ -174,12 +212,21 @@
   @apply bg-gray-200;
 }
 
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             info-link                                             --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
 
-
-.btn.negative {
-  background: #ff0000 !important;
-  @apply bg-negative;
-}   
+.info-link{
+  @apply underline typo-body;
+}
+.info-link.lg{
+  @apply typo-subtitle medium;
+}
+.info-link.sm{
+  @apply typo-small;
+}
 
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -188,7 +235,7 @@
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
 
-
+/* -- nav -- */
 .nav{
   @apply flex flex-col h-screen bg-white;
   min-width: 240px;
@@ -197,8 +244,8 @@
   min-width: 240px;
 }
 .nav-header{
-  @apply flex items-center h-16 px-5 mb-4 text-gray-600 cursor-pointer select-none typo-body;
-  border-bottom: 1px solid #D4D4D8;
+  @apply flex items-center h-16 px-5 text-gray-600 transition-all duration-200 cursor-pointer select-none typo-body;
+  /* border-bottom: 1px solid #D4D4D8; */
 }
 .nav-header:hover{
   @apply bg-gray-100;
@@ -238,14 +285,14 @@
 }
 
 
+/* -- modal -- */
 
 .modal{
   @apply flex flex-row overflow-hidden bg-white border shadow-lg rounded-xl;
   width: 1000px;
 }
 .modal.sm{
-  @apply py-4;
-  width: 400px;
+  @apply py-8 w-96;
 }
 .modal-body{
   @apply flex flex-col w-full bg-gray-100 ;
@@ -255,22 +302,35 @@
   @apply bg-white;
 }
 .modal-body-header{
-  @apply px-10 mt-10 font-black typo-title;
+  @apply px-10 my-10 font-black typo-title;
 }
-.modal-body-divider{
-  @apply mx-auto my-5 bg-gray-300;
+.modal.sm  .modal-body-header{
+  @apply px-10;
+}
+/* .modal-body-divider{
+  @apply mx-auto bg-gray-300;
   width: 90%;
   height: 1px;
-}
+} */
 .modal-body-title{
   @apply px-16 mb-4 text-gray-800 typo-subtitle;
+}
+.modal.sm  .modal-body-title{
+  @apply px-10;
 }
 .modal-body-sub-title{
   @apply px-16 text-gray-600 typo-body;
 }
+.modal.sm .modal-body-sub-title{
+  @apply px-10;
+}
 .modal-body-footer{
   @apply px-16 ;
 }
+.modal.sm .modal-body-footer{
+  @apply px-10;
+}
+
 /* --------------------------------------------------------------------------------------------------------- */
 /* ---                                                                                                   --- */
 /* ---                                             dropdown                                              --- */
@@ -281,7 +341,7 @@
   @apply flex flex-col overflow-hidden shadow-lg rounded-xl bg-gray-50;
 }
 .dropdown-item{
-  @apply flex flex-row items-center px-5 py-5 cursor-pointer select-none place-content-between;
+  @apply flex flex-row items-center px-5 py-3 cursor-pointer select-none place-content-between;
 }
 .dropdown-item:hover{
   @apply bg-gray-200;
@@ -300,11 +360,11 @@
   @apply text-gray-400 typo-tiny;
 }
 .dropdown-divider{
-  @apply w-full mx-auto my-5 bg-gray-300;
+  @apply w-full mx-auto bg-gray-300;
   height: 1px;
 }
 .dropdown-item-form{
-  @apply flex flex-row px-5 py-5 space-x-2 place-content-between;
+  @apply flex flex-row flex-grow-0 w-full px-5 py-5 space-x-2 place-content-between;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -312,3 +372,25 @@
 /* ---                                             card                                                  --- */
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
+
+.card{
+  @apply flex flex-row overflow-hidden bg-white shadow-lg rounded-xl ;
+}
+.card.col{
+  @apply flex-col ;
+}
+.card-image{
+  @apply w-36 h-36;
+}
+.card.col .card-image{
+  @apply w-full;
+}
+.card-body{
+  @apply flex flex-col mt-5;
+}
+.card-body-title{
+  @apply px-5 mb-2 text-black typo-body bold;
+}
+.card-body-text{
+  @apply px-5 text-gray-500 typo-small;
+}

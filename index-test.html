@@ -11,13 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet"></link> 
 </head>
-<body class="bg-gray-300">
+<body class="flex flex-col items-center justify-center gap-10 m-12 bg-gray-300">
     <div class="flex flex-row space-x-7">
         <!-- nav -->
         <div class="relative h-screen bg-gray-light nav">
             <div class="nav-header">
                 nav-header
             </div>
+            <div class="divider-h"></div>
             <div class="nav-section text-gray">
                 nav-section
             </div>
@@ -75,7 +76,7 @@
                     <div class="w-6 h-6 rounded-full avatar bg-primary"></div>
                     <div class="nav-header-title">dsd</div>
                 </div>
-                
+                <div class="divider-h"></div>
                 
                 <div class="nav-item">
                     <div class="nav-item-icon">
@@ -127,21 +128,24 @@
             </div>
             <!-- modal-body -->
             <div class="modal-body">
-                <div class="modal-body-header">
+                <div class="modal-body-header bg-primary-light">
                     modal-body-header
                 </div>
-                <div class="modal-body-divider"></div>
+                <div class="divider-h"></div>
+                <!-- <div class="modal-body-divider"></div> -->
                 <div class=" modal-body-title">
                     modal-body-title
                 </div>
                 <div class=" modal-body-sub-title">
                     modal-body-sub-title
                 </div>
-                <div class="modal-body-divider"></div>
+                <!-- <div class="modal-body-divider"></div> -->
+                <div class="divider-h"></div>
+
 
                 <!-- modal-select -->
                 <div class="modal sm">
-                    <div class="py-8 modal-body sm bg-primary-light">
+                    <div class="modal-body sm bg-primary-light">
                         <div class="modal-body-title">yes or no</div>
                         <div class="break-words modal-body-sub-title">sdsdsddjksdjksjdkjkjkdssjdksjdksdjksdjksdjksdjksjdkssdsdj</div>
                         <div class="flex justify-end px-16 mt-10 space-x-3 modal-body-footer">
@@ -158,7 +162,7 @@
 </div>
 <!-- modal-select -->
 <div class="modal sm">
-    <div class="py-8 modal-body sm bg-primary-light">
+    <div class="modal-body bg-primary-light">
         <div class="modal-body-title">yes or no</div>
         <div class="break-words modal-body-sub-title">어쩌구 저쩌구 입니까?</div>
         <div class="flex justify-end px-16 mt-10 space-x-3 modal-body-footer">
@@ -170,7 +174,7 @@
 
 <!-- dropdown -->
 <div class="w-80 dropdown">
-    <div class=" dropdown-item">
+    <div class="dropdown-item">
         <div class="dropdown-item-title">
             <div class="dropdown-item-title-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +197,7 @@
     </div>
     <div class="dropdown-divider"></div>
     <div class="dropdown-item">
-        <div class=" dropdown-item-title">
+        <div class="dropdown-item-title">
             <div class="dropdown-item-title-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.7094 20.29L17.9994 16.61C19.4395 14.8144 20.1369 12.5353 19.9482 10.2413C19.7595 7.94727 18.6991 5.81275 16.9849 4.27661C15.2708 2.74047 13.0332 1.91948 10.7323 1.98244C8.43145 2.0454 6.24214 2.98753 4.61456 4.61511C2.98698 6.24269 2.04485 8.432 1.98189 10.7329C1.91893 13.0338 2.73992 15.2713 4.27606 16.9855C5.8122 18.6996 7.94672 19.7601 10.2407 19.9488C12.5347 20.1375 14.8138 19.4401 16.6094 18L20.2894 21.68C20.3824 21.7737 20.493 21.8481 20.6148 21.8989C20.7367 21.9496 20.8674 21.9758 20.9994 21.9758C21.1314 21.9758 21.2621 21.9496 21.384 21.8989C21.5059 21.8481 21.6165 21.7737 21.7094 21.68C21.8897 21.4935 21.9904 21.2443 21.9904 20.985C21.9904 20.7256 21.8897 20.4764 21.7094 20.29ZM10.9994 18C9.61495 18 8.26157 17.5894 7.11042 16.8203C5.95928 16.0511 5.06207 14.9578 4.53226 13.6788C4.00245 12.3997 3.86382 10.9922 4.13392 9.63433C4.40402 8.27647 5.0707 7.02919 6.04967 6.05022C7.02864 5.07125 8.27592 4.40456 9.63378 4.13447C10.9917 3.86437 12.3991 4.003 13.6782 4.53281C14.9573 5.06262 16.0505 5.95983 16.8197 7.11097C17.5889 8.26212 17.9994 9.6155 17.9994 11C17.9994 12.8565 17.2619 14.637 15.9492 15.9497C14.6364 17.2625 12.8559 18 10.9994 18Z" fill="currentColor"/>
@@ -223,7 +227,7 @@
         </div>
     </div>
     <div class="dropdown-divider"></div>
-    <div class="dropdown-item-form ">
+    <div class="dropdown-item-form">
         <div  class="input">
             <div contenteditable="true" class="input-body">인풋입니당.</div>
         </div>
@@ -234,34 +238,34 @@
 <!-- card -->
 <div class="flex flex-col py-5 space-y-5">
     <div class="flex flex-row space-x-5">
-        <div class="flex flex-row overflow-hidden bg-white shadow-lg rounded-xl h-36 card" style="width: 400px;">
-            <div class="w-36 h-36 bg-primary-light card-image"></div>
-            <div class="flex flex-col mt-5 card-body">
-                <div class="px-5 mb-3 text-black card-body-title typo-body bold">card-title</div>
-                <div class="px-5 text-gray-500 typo-small card-body-text">sddsdsasdasdasd</div>
+        <div class="card h-36" style="width: 400px;">
+            <div class=" bg-primary-light card-image"></div>
+            <div class="card-body">
+                <div class="card-body-title">card-title</div>
+                <div class="card-body-text">sddsdsasdasdasd</div>
             </div>
         </div>
-        <div class="flex flex-row overflow-hidden bg-white shadow-lg rounded-xl h-36 card" style="width: 400px;">
+        <div class="card h-36" style="width: 400px;">
             <!-- <div class="w-36 h-36 bg-primary-light card-image"></div> -->
-            <div class="flex flex-col mt-5 card-body">
-                <div class="px-5 mb-3 text-black card-body-title typo-body bold">card-title</div>
-                <div class="px-5 text-gray-500 typo-small card-body-text">sddsdsasdasdasd</div>
+            <div class="card-body">
+                <div class="card-body-title">card-title</div>
+                <div class="card-body-text">sddsdsasdasdasd</div>
             </div>
         </div>
     </div>
     <div class="flex flex-row space-x-5">
-        <div class="flex flex-col overflow-hidden bg-white shadow-lg rounded-xl h-60 card" style="width: 400px;">
-            <div class="w-full h-36 bg-primary-light card-image"></div>
+        <div class="card col h-60" style="width: 400px;">
+            <div class="bg-primary-light card-image"></div>
             <div class="flex flex-col mt-5 card-body">
-                <div class="px-5 mb-3 text-black card-body-title typo-body bold">card-title</div>
-                <div class="px-5 text-gray-500 typo-small card-body-text">sddsdsasdasdasd</div>
+                <div class="card-body-title">card-title</div>
+                <div class="card-body-text">sddsdsasdasdasd</div>
             </div>
         </div>
-        <div class="flex flex-row overflow-hidden bg-white shadow-lg rounded-xl h-36 card" style="width: 400px;">
+        <div class="h-36 card" style="width: 400px;">
             <!-- <div class="w-full h-36 bg-primary-light card-image"></div> -->
-            <div class="flex flex-col mt-5 card-body">
-                <div class="px-5 mb-3 text-black card-body-title typo-body bold">card-title</div>
-                <div class="px-5 text-gray-500 typo-small card-body-text">sddsdsasdasdasd</div>
+            <div class="card-body">
+                <div class="card-body-title">card-title</div>
+                <div class="card-body-text">sddsdsasdasdasd</div>
             </div>
         </div>
     </div>
@@ -269,7 +273,7 @@
 
 <!-- button -->
 <div class="flex flex-col py-5 space-y-5">
-    <div class="flex flex-col space-y-3 bg-gray-400">
+    <div class="flex flex-col space-y-3 ">
         <div class="flex flex-row space-x-5">
             <div class="btn lg">default</div>
             <div class="btn lg negative">negative</div>
@@ -309,8 +313,11 @@
                 <span>ghost</span>
             </div>
         </div>
+        <div class="flex flex-row space-x-5">
+            <div class="btn lg full">wide</div>
+        </div>
     </div>
-    <div class="flex flex-col space-y-3 bg-gray-400">
+    <div class="flex flex-col space-y-3 ">
         <div class="flex flex-row space-x-5">
             <div class="btn">default</div>
             <div class="btn negative">negative</div>
@@ -350,8 +357,11 @@
                 <span>ghost</span>
             </div>
         </div>
+        <div class="flex flex-row space-x-5">
+            <div class="btn full">wide</div>
+        </div>
     </div>
-    <div class="flex flex-col space-y-3 bg-gray-400">
+    <div class="flex flex-col space-y-3 ">
         <div class="flex flex-row space-x-5">
             <div class="btn sm">default</div>
             <div class="btn sm negative">negative</div>
@@ -391,8 +401,130 @@
                 <span>ghost</span>
             </div>
         </div>
+        <div class="flex flex-row space-x-5">
+            <div class="btn sm full">wide</div>
+        </div>
     </div>
 </div>
+<!-- input -->
+
+<div class="flex flex-col space-y-5 ">
+    <div class="flex flex-row py-5 space-x-5">
+        <div  class="input lg">
+            <div contenteditable="true" class="input-body">인풋입니당.</div>
+        </div>
+        <div  class="input lg disabled">
+            <div contenteditable="false" class="input-body">인풋입니당.</div>
+        </div>
+        <div class="py-2 space-x-2 lg input success place-content-between">
+            
+            <div contenteditable="true" class="w-full input-body">인풋입니당.</div>
+            <div class="w-6">
+                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7094 20.29L17.9994 16.61C19.4395 14.8144 20.1369 12.5353 19.9482 10.2413C19.7595 7.94727 18.6991 5.81275 16.9849 4.27661C15.2708 2.74047 13.0332 1.91948 10.7323 1.98244C8.43145 2.0454 6.24214 2.98753 4.61456 4.61511C2.98698 6.24269 2.04485 8.432 1.98189 10.7329C1.91893 13.0338 2.73992 15.2713 4.27606 16.9855C5.8122 18.6996 7.94672 19.7601 10.2407 19.9488C12.5347 20.1375 14.8138 19.4401 16.6094 18L20.2894 21.68C20.3824 21.7737 20.493 21.8481 20.6148 21.8989C20.7367 21.9496 20.8674 21.9758 20.9994 21.9758C21.1314 21.9758 21.2621 21.9496 21.384 21.8989C21.5059 21.8481 21.6165 21.7737 21.7094 21.68C21.8897 21.4935 21.9904 21.2443 21.9904 20.985C21.9904 20.7256 21.8897 20.4764 21.7094 20.29ZM10.9994 18C9.61495 18 8.26157 17.5894 7.11042 16.8203C5.95928 16.0511 5.06207 14.9578 4.53226 13.6788C4.00245 12.3997 3.86382 10.9922 4.13392 9.63433C4.40402 8.27647 5.0707 7.02919 6.04967 6.05022C7.02864 5.07125 8.27592 4.40456 9.63378 4.13447C10.9917 3.86437 12.3991 4.003 13.6782 4.53281C14.9573 5.06262 16.0505 5.95983 16.8197 7.11097C17.5889 8.26212 17.9994 9.6155 17.9994 11C17.9994 12.8565 17.2619 14.637 15.9492 15.9497C14.6364 17.2625 12.8559 18 10.9994 18Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+        <div class="py-2 space-x-2 lg input negative place-content-between">
+            <div class="w-6">
+                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7094 20.29L17.9994 16.61C19.4395 14.8144 20.1369 12.5353 19.9482 10.2413C19.7595 7.94727 18.6991 5.81275 16.9849 4.27661C15.2708 2.74047 13.0332 1.91948 10.7323 1.98244C8.43145 2.0454 6.24214 2.98753 4.61456 4.61511C2.98698 6.24269 2.04485 8.432 1.98189 10.7329C1.91893 13.0338 2.73992 15.2713 4.27606 16.9855C5.8122 18.6996 7.94672 19.7601 10.2407 19.9488C12.5347 20.1375 14.8138 19.4401 16.6094 18L20.2894 21.68C20.3824 21.7737 20.493 21.8481 20.6148 21.8989C20.7367 21.9496 20.8674 21.9758 20.9994 21.9758C21.1314 21.9758 21.2621 21.9496 21.384 21.8989C21.5059 21.8481 21.6165 21.7737 21.7094 21.68C21.8897 21.4935 21.9904 21.2443 21.9904 20.985C21.9904 20.7256 21.8897 20.4764 21.7094 20.29ZM10.9994 18C9.61495 18 8.26157 17.5894 7.11042 16.8203C5.95928 16.0511 5.06207 14.9578 4.53226 13.6788C4.00245 12.3997 3.86382 10.9922 4.13392 9.63433C4.40402 8.27647 5.0707 7.02919 6.04967 6.05022C7.02864 5.07125 8.27592 4.40456 9.63378 4.13447C10.9917 3.86437 12.3991 4.003 13.6782 4.53281C14.9573 5.06262 16.0505 5.95983 16.8197 7.11097C17.5889 8.26212 17.9994 9.6155 17.9994 11C17.9994 12.8565 17.2619 14.637 15.9492 15.9497C14.6364 17.2625 12.8559 18 10.9994 18Z" fill="currentColor"/>
+                </svg>
+            </div>
+            <div contenteditable="true" class="w-full input-body">인풋입니당.</div>
+        </div>
+    </div>
+    <div class="flex flex-row py-5 space-x-5">
+        <div  class="input">
+            <div class="w-6">
+                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7094 20.29L17.9994 16.61C19.4395 14.8144 20.1369 12.5353 19.9482 10.2413C19.7595 7.94727 18.6991 5.81275 16.9849 4.27661C15.2708 2.74047 13.0332 1.91948 10.7323 1.98244C8.43145 2.0454 6.24214 2.98753 4.61456 4.61511C2.98698 6.24269 2.04485 8.432 1.98189 10.7329C1.91893 13.0338 2.73992 15.2713 4.27606 16.9855C5.8122 18.6996 7.94672 19.7601 10.2407 19.9488C12.5347 20.1375 14.8138 19.4401 16.6094 18L20.2894 21.68C20.3824 21.7737 20.493 21.8481 20.6148 21.8989C20.7367 21.9496 20.8674 21.9758 20.9994 21.9758C21.1314 21.9758 21.2621 21.9496 21.384 21.8989C21.5059 21.8481 21.6165 21.7737 21.7094 21.68C21.8897 21.4935 21.9904 21.2443 21.9904 20.985C21.9904 20.7256 21.8897 20.4764 21.7094 20.29ZM10.9994 18C9.61495 18 8.26157 17.5894 7.11042 16.8203C5.95928 16.0511 5.06207 14.9578 4.53226 13.6788C4.00245 12.3997 3.86382 10.9922 4.13392 9.63433C4.40402 8.27647 5.0707 7.02919 6.04967 6.05022C7.02864 5.07125 8.27592 4.40456 9.63378 4.13447C10.9917 3.86437 12.3991 4.003 13.6782 4.53281C14.9573 5.06262 16.0505 5.95983 16.8197 7.11097C17.5889 8.26212 17.9994 9.6155 17.9994 11C17.9994 12.8565 17.2619 14.637 15.9492 15.9497C14.6364 17.2625 12.8559 18 10.9994 18Z" fill="currentColor"/>
+                </svg>
+            </div>
+            <div contenteditable="true" class="w-full input-body">인풋입니당.</div>
+        </div>
+        <div  class="input disabled">
+            <div contenteditable="false" class="input-body">인풋입니당.</div>
+        </div>
+        <div class="py-2 space-x-2 input success ">
+            <div contenteditable="true" class="w-full input-body">인풋입니당.</div>
+            <div class="w-6">
+                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7094 20.29L17.9994 16.61C19.4395 14.8144 20.1369 12.5353 19.9482 10.2413C19.7595 7.94727 18.6991 5.81275 16.9849 4.27661C15.2708 2.74047 13.0332 1.91948 10.7323 1.98244C8.43145 2.0454 6.24214 2.98753 4.61456 4.61511C2.98698 6.24269 2.04485 8.432 1.98189 10.7329C1.91893 13.0338 2.73992 15.2713 4.27606 16.9855C5.8122 18.6996 7.94672 19.7601 10.2407 19.9488C12.5347 20.1375 14.8138 19.4401 16.6094 18L20.2894 21.68C20.3824 21.7737 20.493 21.8481 20.6148 21.8989C20.7367 21.9496 20.8674 21.9758 20.9994 21.9758C21.1314 21.9758 21.2621 21.9496 21.384 21.8989C21.5059 21.8481 21.6165 21.7737 21.7094 21.68C21.8897 21.4935 21.9904 21.2443 21.9904 20.985C21.9904 20.7256 21.8897 20.4764 21.7094 20.29ZM10.9994 18C9.61495 18 8.26157 17.5894 7.11042 16.8203C5.95928 16.0511 5.06207 14.9578 4.53226 13.6788C4.00245 12.3997 3.86382 10.9922 4.13392 9.63433C4.40402 8.27647 5.0707 7.02919 6.04967 6.05022C7.02864 5.07125 8.27592 4.40456 9.63378 4.13447C10.9917 3.86437 12.3991 4.003 13.6782 4.53281C14.9573 5.06262 16.0505 5.95983 16.8197 7.11097C17.5889 8.26212 17.9994 9.6155 17.9994 11C17.9994 12.8565 17.2619 14.637 15.9492 15.9497C14.6364 17.2625 12.8559 18 10.9994 18Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+        <div class="py-2 space-x-2 input negative whitespace-nowrap">
+            <div contenteditable="true" class="w-full input-body">인풋입니당.</div>
+            <div class="w-6">
+                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7094 20.29L17.9994 16.61C19.4395 14.8144 20.1369 12.5353 19.9482 10.2413C19.7595 7.94727 18.6991 5.81275 16.9849 4.27661C15.2708 2.74047 13.0332 1.91948 10.7323 1.98244C8.43145 2.0454 6.24214 2.98753 4.61456 4.61511C2.98698 6.24269 2.04485 8.432 1.98189 10.7329C1.91893 13.0338 2.73992 15.2713 4.27606 16.9855C5.8122 18.6996 7.94672 19.7601 10.2407 19.9488C12.5347 20.1375 14.8138 19.4401 16.6094 18L20.2894 21.68C20.3824 21.7737 20.493 21.8481 20.6148 21.8989C20.7367 21.9496 20.8674 21.9758 20.9994 21.9758C21.1314 21.9758 21.2621 21.9496 21.384 21.8989C21.5059 21.8481 21.6165 21.7737 21.7094 21.68C21.8897 21.4935 21.9904 21.2443 21.9904 20.985C21.9904 20.7256 21.8897 20.4764 21.7094 20.29ZM10.9994 18C9.61495 18 8.26157 17.5894 7.11042 16.8203C5.95928 16.0511 5.06207 14.9578 4.53226 13.6788C4.00245 12.3997 3.86382 10.9922 4.13392 9.63433C4.40402 8.27647 5.0707 7.02919 6.04967 6.05022C7.02864 5.07125 8.27592 4.40456 9.63378 4.13447C10.9917 3.86437 12.3991 4.003 13.6782 4.53281C14.9573 5.06262 16.0505 5.95983 16.8197 7.11097C17.5889 8.26212 17.9994 9.6155 17.9994 11C17.9994 12.8565 17.2619 14.637 15.9492 15.9497C14.6364 17.2625 12.8559 18 10.9994 18Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- info link -->
+<div class="flex flex-row items-center h-10 px-20 space-x-5">
+    <a href="#" class="text-primary lg info-link">Info link example</a>
+    <a href="#" class="text-primary info-link">Info link example</a>
+    <a href="#" class="text-primary sm info-link">Info link example</a>
+</div>
+<!-- divider -->
+<div class="flex flex-row items-center w-full h-40 bg-black">
+    <div class="divider-h"></div>
+    <div class="divider-v"></div>
+    <div class="divider-h"></div>
+</div>
+<!-- textarea -->
+<textarea name="strum" id="strum" cols="30" rows="10" placeholder="안뇽하세요" class="textarea w-72">
+</textarea>
+
+<!-- radio -->
+<div class="flex flex-col h-32 bg-negative">
+    <div>Select</div>
+    <div>
+        <input type="radio" id="strum" name="strum" value="strum" checked>
+        <label for="strem">strum</label>
+    </div>
+    <div>
+        <input type="radio" id="yujin" name="strum" value="yujin">
+        <label for="yujin">yujin</label>
+    </div>
+    <div>
+        <input type="radio" id="jinjinjin" name="strum" value="jinjinjin">
+        <label for="jinjinjin">jinjinjin</label>
+    </div>
+</div>
+
+<!--  checked -->
+<div class="flex flex-row items-center space-x-1">
+    <input type="checkbox" name="strum" id="strum" class=" checked:bg-blue-600 checked:border-transparent">
+    <label for="strum">strum</label>
+</div>
+
+<div class="modal sm">
+    <div class="modal-body">
+        <div class="modal-body-title">Select</div>
+        <div class="modal-body-sub-title">
+            <input type="radio" id="strum" name="strum" value="strum" checked>
+            <label for="strem">strum</label>
+        </div>
+        <div class="modal-body-sub-title">
+            <input type="radio" id="yujin" name="strum" value="yujin">
+            <label for="yujin">yujin</label>
+        </div>
+        <div class="modal-body-sub-title">
+            <input type="radio" id="jinjinjin" name="strum" value="jinjinjin">
+            <label for="jinjinjin">jinjinjin</label>
+        </div>
+        <div class="modal-body-footer">
+            <div class="btn full">btn</div>
+        </div>
+    </div>
+</div>
+
+
 
 <script>
     function copyFontStype() {
