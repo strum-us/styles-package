@@ -325,7 +325,7 @@
   @apply px-10;
 }
 .modal-body-footer{
-  @apply px-16 ;
+  @apply flex justify-end px-16 mt-10 space-x-3;
 }
 .modal.sm .modal-body-footer{
   @apply px-10;
@@ -393,4 +393,36 @@
 }
 .card-body-text{
   @apply px-5 text-gray-500 typo-small;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             toggle                                                  --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+input.toggle[type=checkbox]{
+  @apply hidden w-0 h-0;
+}
+
+label.toggle {
+  @apply relative block w-20 h-10 bg-gray-500 rounded-full cursor-pointer;
+}
+
+label:after {
+  @apply absolute w-8 h-8 bg-white rounded-full top-1 left-1;
+	content: '';
+	transition: 0.3s;
+}
+
+input:checked + label.toggle {
+  @apply bg-primary;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+  @apply w-10;
 }

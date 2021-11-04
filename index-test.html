@@ -128,7 +128,7 @@
             </div>
             <!-- modal-body -->
             <div class="modal-body">
-                <div class="modal-body-header bg-primary-light">
+                <div class="modal-body-header">
                     modal-body-header
                 </div>
                 <div class="divider-h"></div>
@@ -162,10 +162,10 @@
 </div>
 <!-- modal-select -->
 <div class="modal sm">
-    <div class="modal-body bg-primary-light">
+    <div class="modal-body">
         <div class="modal-body-title">yes or no</div>
         <div class="break-words modal-body-sub-title">어쩌구 저쩌구 입니까?</div>
-        <div class="flex justify-end px-16 mt-10 space-x-3 modal-body-footer">
+        <div class="modal-body-footer">
             <div class="flex items-center btn ghost">좋아요</div>
             <div class="flex items-center btn negative">싫어요</div>
         </div>
@@ -481,49 +481,64 @@
 </textarea>
 
 <!-- radio -->
-<div class="flex flex-col h-32 bg-negative">
-    <div>Select</div>
-    <div>
-        <input type="radio" id="strum" name="strum" value="strum" checked>
-        <label for="strem">strum</label>
-    </div>
-    <div>
-        <input type="radio" id="yujin" name="strum" value="yujin">
-        <label for="yujin">yujin</label>
-    </div>
-    <div>
-        <input type="radio" id="jinjinjin" name="strum" value="jinjinjin">
-        <label for="jinjinjin">jinjinjin</label>
-    </div>
-</div>
-
-<!--  checked -->
-<div class="flex flex-row items-center space-x-1">
-    <input type="checkbox" name="strum" id="strum" class=" checked:bg-blue-600 checked:border-transparent">
-    <label for="strum">strum</label>
-</div>
-
 <div class="modal sm">
     <div class="modal-body">
-        <div class="modal-body-title">Select</div>
-        <div class="modal-body-sub-title">
-            <input type="radio" id="strum" name="strum" value="strum" checked>
-            <label for="strem">strum</label>
-        </div>
-        <div class="modal-body-sub-title">
-            <input type="radio" id="yujin" name="strum" value="yujin">
-            <label for="yujin">yujin</label>
-        </div>
-        <div class="modal-body-sub-title">
-            <input type="radio" id="jinjinjin" name="strum" value="jinjinjin">
-            <label for="jinjinjin">jinjinjin</label>
+        <div class="modal-body-title">Radio-button</div>
+        <div class="space-y-2 modal-body-sub-title">
+            <div class="flex flex-row items-center space-x-2">
+                <input type="radio" id="strum" name="strum" value="strum" checked>
+                <label for="strem">strum</label>
+            </div>
+            <div class="flex flex-row items-center space-x-2">
+                <input type="radio" id="yujin" name="strum" value="yujin">
+                <label for="yujin">yujin</label>
+            </div>
+            <div class="flex flex-row items-center space-x-2">
+                <input type="radio" id="jinjinjin" name="strum" value="jinjinjin">
+                <label for="jinjinjin">jinjinjin</label>
+            </div>
         </div>
         <div class="modal-body-footer">
-            <div class="btn full">btn</div>
+            <div class="btn full solid">btn</div>
         </div>
     </div>
 </div>
 
+<!-- checkbox -->
+<div class="modal sm">
+    <div class="modal-body">
+        <div class="modal-body-title">Check-box</div>
+        <div class="space-y-2 modal-body-sub-title">
+            <div class="flex flex-row items-center space-x-1">
+                <input type="checkbox" name="strum" id="strum" class=" checked:bg-blue-600 checked:border-transparent">
+                <label for="strum">strum</label>
+            </div>
+            <div class="flex flex-row items-center space-x-1">
+                <input type="checkbox" name="strum" id="strum" class=" checked:bg-blue-600 checked:border-transparent">
+                <label for="strum">strum</label>
+            </div>
+            <div class="flex flex-row items-center space-x-1">
+                <input type="checkbox" name="strum" id="strum" class=" checked:bg-blue-600 checked:border-transparent">
+                <label for="strum">strum</label>
+            </div>
+        </div>
+        <div class="modal-body-footer">
+            <div class="btn full solid">btn</div>
+        </div>
+    </div>
+</div>
+<!-- toggle -->
+<div class="modal sm">
+    <div class="modal-body">
+        <div class="modal-body-title">Check-box</div>
+        <div class="flex justify-center space-y-2 modal-body-sub-title">
+                <input type="checkbox" id="switch" class="toggle"><label for="switch" class="toggle"></label>
+        </div>
+        <div class="modal-body-footer">
+            <div class="btn full solid">btn</div>
+        </div>
+    </div>
+</div>
 
 
 <script>
