@@ -94,7 +94,7 @@
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
 .avatar.sm{
-  @apply w-6 h-6;
+  @apply w-6 h-6 rounded-full;
 }
 
 
@@ -127,8 +127,17 @@
 .input-body{
   @apply flex flex-row items-center w-full;
 }
+.input-icon{
+  @apply flex-shrink-0 w-6;
+}
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}
 
-
+div[contenteditable=true] {
+  @apply text-gray-400 typo-small;
+}
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* ---                                                                                                   --- */
@@ -161,6 +170,9 @@
 }
 .btn:active{
   @apply bg-gray-300;
+}
+.btn-icon{
+  @apply w-6;
 }
 .btn svg{
   @apply py-2.5;
@@ -231,6 +243,9 @@
 
 .info-link{
   @apply flex flex-row items-center space-x-1 underline typo-body;
+}
+.info-link.copy{
+  @apply text-gray-900;
 }
 .info-link.lg{
   @apply typo-subtitle medium;
@@ -337,10 +352,10 @@
 .modal.sm  .modal-body-title{
   @apply px-10;
 }
-.modal-body-sub-title{
+.modal-body-subtitle{
   @apply  text-gray-500 typo-body;
 }
-.modal.sm .modal-body-sub-title{
+.modal.sm .modal-body-subtitle{
   @apply px-10;
 }
 .modal.sm .modal-body-footer{
@@ -359,24 +374,31 @@
 .dropdown{
   @apply flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50;
 }
-.dropdown-item{
-  @apply flex flex-row items-center px-5 py-3 cursor-pointer select-none place-content-between;
+.dropdown-item-h{
+  @apply flex flex-row items-center px-5 py-4 cursor-pointer select-none hover:bg-gray-200 place-content-between;
 }
-.dropdown-item:hover{
+/* .dropdown-item-h.profile,
+.dropdown-item-v.profile{
+  @apply py-4;
+} */
+.dropdown-item-v{
+  @apply flex flex-col justify-center px-5 py-4 space-y-2 select-none hover:bg-gray-200;
+}
+/* .dropdown-item:hover{
   @apply bg-gray-200;
-}
+} */
 /* new class name-dropdown-item-title(자식들도 같이 바뀜) */
 .dropdown-item-title{
   @apply flex items-center w-full space-x-2;
 }
 .dropdown-item-title-icon{
-  @apply text-gray-600 fill-current;
+  @apply h-5 text-gray-600 fill-current;
 }
 .dropdown-item-title-text{
   @apply text-gray-800 typo-body;
 }
 .dropdown-item-subtext{
-  @apply text-gray-400 typo-tiny;
+  @apply text-gray-500 typo-small medium;
 }
 .dropdown-divider{
   @apply w-full mx-auto bg-gray-300;
@@ -385,7 +407,12 @@
 .dropdown-item-form{
   @apply flex flex-row flex-grow-0 w-full px-5 py-5 space-x-2 place-content-between;
 }
-
+.dropdown-item-profile{
+  @apply text-gray-500 typo-small medium;
+}
+.dropdown-footer{
+  @apply  flex flex-row items-center px-5 py-4 cursor-pointer select-none place-content-between;
+}
 /* --------------------------------------------------------------------------------------------------------- */
 /* ---                                                                                                   --- */
 /* ---                                             card                                                  --- */
