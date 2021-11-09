@@ -104,7 +104,7 @@
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
 .input{
-  @apply box-border flex flex-row items-center w-full h-10 px-2 text-gray-400 border border-gray-300 rounded-lg cursor-pointer typo-small bg-gray-50;
+  @apply box-border flex flex-row items-center w-full h-10 px-2 text-gray-400 border border-gray-300 rounded-lg cursor-pointer focus:text-black typo-small bg-gray-50;
 }
 .input.lg{
   @apply h-12 typo-subtitle medium px-3
@@ -130,14 +130,18 @@
 .input-icon{
   @apply flex-shrink-0 w-6;
 }
-[contenteditable=true]:empty:before{
-  content: attr(placeholder);
-  display: block; /* For Firefox */
-}
 
 div[contenteditable=true] {
-  @apply text-gray-400 typo-small;
+  @apply w-full overflow-hidden text-black typo-small;
 }
+
+div[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  @apply text-gray-400;
+}
+
+
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* ---                                                                                                   --- */
@@ -245,7 +249,7 @@ div[contenteditable=true] {
   @apply flex flex-row items-center space-x-1 underline typo-body;
 }
 .info-link.copy{
-  @apply text-gray-900;
+  @apply text-primary hover:text-blue-700 active:text-primary;
 }
 .info-link.lg{
   @apply typo-subtitle medium;
@@ -398,7 +402,7 @@ div[contenteditable=true] {
   @apply text-gray-800 typo-body;
 }
 .dropdown-item-subtext{
-  @apply text-gray-500 typo-small medium;
+  @apply text-gray-500 typo-small whitespace-nowrap medium;
 }
 .dropdown-divider{
   @apply w-full mx-auto bg-gray-300;
@@ -408,7 +412,7 @@ div[contenteditable=true] {
   @apply flex flex-row flex-grow-0 w-full px-5 py-5 space-x-2 place-content-between;
 }
 .dropdown-item-profile{
-  @apply text-gray-500 typo-small medium;
+  @apply text-gray-700 typo-small medium;
 }
 .dropdown-footer{
   @apply  flex flex-row items-center px-5 py-4 cursor-pointer select-none place-content-between;
