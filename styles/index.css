@@ -260,10 +260,10 @@ div[contenteditable=true]:empty:before{
 /* --------------------------------------------------------------------------------------------------------- */
 
 .info-link{
-  @apply flex flex-row items-center space-x-1 underline typo-body;
+  @apply flex flex-row items-center space-x-1 typo-body;
 }
 .info-link.copy{
-  @apply text-primary hover:text-blue-700 active:text-primary;
+  @apply underline text-primary hover:text-blue-700 active:text-primary;
 }
 .info-link.lg{
   @apply typo-subtitle medium;
@@ -490,6 +490,26 @@ input:checked + label:after {
 label:active:after {
   @apply w-6;
 }
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                          checkbox                                                 --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.check-form{
+  @apply flex flex-row items-center space-x-1;
+}
+
+.check-form > label{
+  @apply typo-small;
+}
+
+
+
+
+
 
 
 /* --------------------------------------------------------------------------------------------------------- */
