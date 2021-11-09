@@ -189,6 +189,9 @@ div[contenteditable=true]:empty:before{
 .btn:active{
   @apply bg-gray-300;
 }
+.btn.icon{
+  @apply w-10 h-10 px-2.5 space-x-0;
+}
 .btn-icon{
   @apply w-6;
 }
@@ -444,13 +447,13 @@ div[contenteditable=true]:empty:before{
   @apply flex-col ;
 }
 .card-image{
-  @apply w-52 h-60;
+  @apply flex-shrink-0 w-52 h-60;
 }
 .card.col .card-image{
   @apply w-full;
 }
 .card-body{
-  @apply flex flex-col h-full;
+  @apply box-border flex flex-col w-full h-full py-5 mx-6 place-content-between;
 }
 .card-body-title{
   @apply text-black typo-body bold;
