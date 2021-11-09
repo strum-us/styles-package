@@ -444,19 +444,24 @@ div[contenteditable=true]:empty:before{
   @apply flex-col ;
 }
 .card-image{
-  @apply w-36 h-36;
+  @apply w-44 h-60;
 }
 .card.col .card-image{
   @apply w-full;
 }
 .card-body{
-  @apply flex flex-col mt-5;
+  @apply flex flex-col h-full mt-5;
 }
 .card-body-title{
   @apply px-5 mb-2 text-black typo-body bold;
 }
 .card-body-text{
   @apply px-5 text-gray-500 typo-small;
+}
+
+.card-image{
+  background: url(../img/card-img.png) no-repeat center center;
+  background-size: cover;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
