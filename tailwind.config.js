@@ -37,7 +37,7 @@ module.exports = {
     colors: {
       primary: {
         light: '#3B5FE0',
-        DEFAULT: '#3B5FE0',
+        DEFAULT: '#5675e1',
         dark: '#3B5FE0',
       },
       negative: {
@@ -58,6 +58,11 @@ module.exports = {
       blue: colors.blue,
       red: colors.red,
       green: colors.green,
+      accent:{
+        dark: '#2a2b2f',
+        extreme: '#232529',
+      },
+      complimentary: '#eeeeff',
     },
   },
   plugins: [

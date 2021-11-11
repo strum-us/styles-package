@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build:style": "tailwind build -i ./styles/strum-style/index.css -o ./styles/strum-style/tailwind.css",
-    "build:tailwind": "tailwind-watch"
+    "start": "tailwind-watch"
   },
   "browserslist": {
     "development": [
