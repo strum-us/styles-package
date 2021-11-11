@@ -1,0 +1,737 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./custom.css";
+/* @import './custom.css'; */
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             typo                                                  --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.typo-tiny {
+  @apply text-xs;
+}
+
+.typo-small {
+  @apply text-sm;
+}
+
+.typo-body {
+  @apply text-base;
+}
+
+.typo-subtitle {
+  @apply text-lg font-bold;
+}
+
+.typo-title {
+  @apply text-xl;
+}
+
+.bold {
+  @apply font-bold ;
+}
+.medium{
+  @apply font-medium;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                     svg의 부모는 무조건 div.icon-container                                                  --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.icon-container{
+  @apply flex-grow-0 flex-shrink-0;
+}
+.icon-container svg{
+  @apply w-5 text-negative;
+}
+.lg .icon-container svg{
+  @apply w-6 ;
+}
+
+.sm .icon-container svg{
+  @apply w-4 ;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             divider                                               --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+.divider-h{
+  @apply w-full bg-gray-300;
+  height: 1px;
+}
+.divider-v{
+  @apply h-full bg-gray-300;
+  width: 1px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                         Nav / Modal                                               --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+/* ------ nav ------ */
+.nav{
+  @apply relative flex flex-col h-screen bg-white;
+  min-width: 240px;
+}
+.modal .nav{
+  min-width: 240px;
+}
+
+.nav-header{
+  @apply flex items-center h-16 px-5 space-x-2 text-gray-600 transition-all duration-200 cursor-pointer select-none typo-body;
+}
+.nav-header:hover{
+  @apply bg-gray-100;
+}
+.nav-header:active{
+  @apply bg-gray-200;
+}
+.nav-section{
+  @apply px-4 mt-4 mb-1 text-gray-500 typo-small;
+}
+.nav-footer{
+  @apply flex items-center h-16 px-5 text-gray-600 cursor-pointer select-none typo-body;
+  border-top: 1px solid #D4D4D8;
+}
+.nav-footer:hover{
+  @apply bg-gray-100;
+}
+.nav-footer:active{
+  @apply bg-gray-200;
+}
+.nav-item{
+  @apply box-border flex flex-row items-center h-10 px-5 space-x-1.5 cursor-pointer select-none;
+  
+}
+.nav-item:hover{
+  @apply bg-gray-100 ;
+}
+.nav-item:active{
+  @apply bg-gray-200 ;
+}
+
+.nav-item-body{
+  @apply text-gray-600 typo-small;
+}
+
+
+/* 
+.nav-item-icon{
+  @apply mr-2 text-gray-600 fill-current;
+}
+.nav-item-icon{
+  @apply h-full;
+}
+.nav-item svg{
+  @apply py-2.5;
+} */
+
+
+
+/* ------ modal ------ */
+
+.modal{
+  @apply flex flex-row overflow-hidden bg-white border shadow-lg rounded-xl;
+  width: 1000px;
+}
+.modal.sm{
+  @apply py-8 w-96;
+}
+
+.modal-body{
+  @apply flex flex-col w-full px-16 bg-gray-100 ;
+  
+}
+.modal.sm > .modal-body{
+  @apply px-0 bg-white;
+}
+.modal-body-header{
+  @apply mt-6 font-black select-none typo-title;
+}
+.modal.sm .modal-body-header{
+  @apply px-10;
+}
+.modal-body-divider{
+  @apply w-full my-5 bg-gray-300 ;
+  height: 1px;
+}
+
+.modal-body-title{
+  @apply mb-4 text-gray-700 select-none typo-subtitle;
+}
+.modal.sm  .modal-body-title{
+  @apply px-10;
+}
+.modal-body-subtitle{
+  @apply  text-gray-500 typo-body;
+}
+.modal.sm .modal-body-subtitle{
+  @apply px-10;
+}
+.modal.sm .modal-body-footer{
+  @apply flex justify-end px-16 mt-10 space-x-3;
+}
+.modal.sm .modal-body-footer{
+  @apply px-10;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             dropdown                                              --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.dropdown{
+  @apply flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50;
+}
+.dropdown-item-h{
+  @apply flex flex-row items-center px-5 py-4 cursor-pointer select-none hover:bg-gray-200 place-content-between;
+}
+
+.dropdown-item-v{
+  @apply flex flex-col justify-center px-5 py-4 space-y-2 select-none hover:bg-gray-200;
+}
+
+.dropdown-item-title{
+  @apply flex items-center w-full space-x-2;
+}
+
+.dropdown-item-title-text{
+  @apply text-gray-800 typo-body;
+}
+.dropdown-item-subtext{
+  @apply text-gray-500 typo-small whitespace-nowrap medium;
+}
+.dropdown-divider{
+  @apply w-full mx-auto bg-gray-300;
+  height: 1px;
+}
+.dropdown-item-form{
+  @apply flex flex-row flex-grow-0 w-full px-5 py-5 space-x-2 place-content-between;
+}
+.dropdown-item-profile{
+  @apply text-gray-700 typo-small medium;
+}
+.dropdown-footer{
+  @apply  flex flex-row items-center px-5 py-4 cursor-pointer select-none place-content-between;
+}
+
+/* 
+.dropdown-item-h.profile,
+.dropdown-item-v.profile{
+  @apply py-4;
+}
+.dropdown-item:hover{
+  @apply bg-gray-200;
+}
+.dropdown-item-title-icon{
+  @apply h-5 text-gray-600 fill-current;
+} */
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             card                                                  --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.card{
+  @apply flex flex-row overflow-hidden bg-white shadow-lg rounded-xl ;
+}
+.card.col{
+  @apply flex-col ;
+}
+.card-image{
+  @apply flex-shrink-0;
+}
+.card.col .card-image{
+  @apply w-full;
+}
+.card-body{
+  @apply box-border flex flex-col w-full h-full py-5 mx-6 place-content-between;
+}
+.card-body-title{
+  @apply text-black typo-body bold;
+}
+.card-body-text{
+  @apply text-gray-800 typo-small;
+}
+.card-body-text.sm{
+  @apply text-gray-600 typo-tiny;
+}
+
+/* .card-image{
+  background: url(../img/card-img.png) no-repeat center center;
+  background-size: cover;
+} */
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                         Button  //  svg의 부모는 무조건 div.icon-container                            --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+
+.btn {
+  @apply box-border flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-1 text-gray-500 transition-all duration-200 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small bg-gray-50 ;
+}
+.btn.toggle{
+  @apply justify-start;
+}
+.btn.toggle span{
+  @apply w-full;
+}
+.btn:hover{
+  @apply bg-gray-200;
+}
+.btn:active{
+  @apply bg-gray-300;
+}
+.btn.icon{
+  @apply w-10 h-10;
+}
+.btn.lg.icon{
+  @apply w-12 h-12;
+}
+.btn.sm.icon{
+  @apply w-8 h-8;
+}
+.btn.disabled{
+  @apply text-gray-400 bg-gray-50;
+}
+.btn.lg{
+  @apply h-12 px-6 space-x-2 typo-subtitle;
+}
+.btn.sm{
+  @apply h-8 px-3 space-x-1 typo-tiny;
+}
+
+.btn.full {
+  @apply flex-grow flex-shrink-0 max-w-none;
+}
+.btn.negative:hover{
+  @apply bg-red-100 border-negative text-negative; 
+}
+.btn.negative:active{
+  @apply bg-red-200;
+}
+.btn.primary{
+  @apply bg-blue-100 border-primary text-primary;
+}
+.btn.primary.disabled{
+  @apply text-blue-400 bg-blue-100 border-blue-400;
+}
+.btn.primary:hover{
+  @apply bg-blue-200 border-primary text-primary;
+}
+.btn.primary:active{
+  @apply bg-blue-300;
+}
+.btn.solid{
+  @apply text-white border-0 bg-primary;
+}
+.btn.solid:hover{
+  @apply bg-blue-700;
+}
+.btn.solid:active{
+  @apply bg-blue-800;
+}
+.btn.ghost{
+  @apply text-gray-500 bg-opacity-0 border-0 hover:bg-gray-100 active:bg-gray-200;
+}
+.btn.ghost.disabled{
+  @apply text-gray-300;
+}
+/* .btn.ghost:hover{
+  @apply bg-gray-100;
+}
+.btn.ghost:active{
+  @apply bg-gray-200;
+} */
+
+.btn-form{
+  @apply flex flex-row flex-grow-0 flex-shrink-0 w-full mb-6 space-x-3 ;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             Input                                                 --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+.input{
+  @apply box-border flex flex-row items-center w-full h-10 px-2 space-x-2 overflow-hidden text-gray-400 border border-gray-300 rounded-lg cursor-pointer whitespace-nowrap focus:text-black typo-small bg-gray-50;
+}
+.input-body{
+  @apply flex flex-row items-center w-full whitespace-nowrap;
+}
+.input-form{
+  @apply flex flex-col w-full space-y-1 overflow-hidden;
+}
+.input-label{
+  @apply flex-shrink-0 mb-1 text-gray-700 typo-small whitespace-nowrap;
+}
+.input-negative{
+  @apply flex flex-row justify-end flex-shrink-0 text-negative typo-tiny whitespace-nowrap;
+}
+/* .input-form .input{
+  @apply flex-grow-0 flex-shrink-0;
+} */
+
+
+
+.input.lg{
+  @apply h-12 typo-subtitle medium px-3
+}
+.input.disabled{
+  @apply text-gray-300 bg-gray-100 cursor-default select-none;
+}
+.input > div{
+  @apply typo-small;
+}
+.input.lg > div{
+  @apply typo-subtitle;
+}
+.input:focus-within{
+  @apply text-gray-800 bg-white border-primary;
+}
+.input.success:focus-within{
+  @apply border-success;
+}
+.input.negative:focus-within{
+  @apply bg-red-100 border-negative text-negative;
+}
+:focus{
+  outline: none;
+}
+
+/* .input-icon{
+  @apply flex-shrink-0 w-5;
+} */
+
+div[contenteditable=true] {
+  @apply w-full overflow-hidden text-black typo-small;
+}
+
+
+div[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  @apply text-gray-400;
+}
+
+
+
+/* .input.disabled > div[contenteditable=true] {
+  @apply text-negative;
+} */
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             info-link                                             --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.info-link{
+  @apply flex flex-row items-center space-x-1 typo-body;
+}
+.info-link.copy{
+  @apply underline text-primary hover:text-blue-700 active:text-primary;
+}
+.info-link.lg{
+  @apply typo-subtitle medium;
+}
+.info-link.sm{
+  @apply typo-small;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             textarea                                              --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.textarea{
+  @apply box-border h-32 px-5 py-5 text-gray-800 border border-gray-300 resize-none bg-gray-50 typo-small rounded-xl cursor-text;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                          checkbox                                                 --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.check-form{
+  @apply flex flex-row items-center space-x-1;
+}
+
+.check-form > label{
+  @apply typo-small;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                             toggle                                                --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+input.toggle[type=checkbox]{
+  @apply hidden w-0 h-0;
+}
+
+label.toggle {
+  @apply relative block w-16 h-8 bg-gray-400 rounded-full cursor-pointer;
+}
+
+label.toggle:after {
+  @apply absolute w-6 h-6 bg-white rounded-full top-1 left-1;
+	content: '';
+	transition: 0.2s;
+}
+
+input:checked + label.toggle {
+  @apply bg-primary;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+  @apply w-6;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                   avatar-daisy 참고                                                --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+.avatar {
+  @apply relative inline-flex;
+  /* display: inline-flex;
+  position: relative; */
+}
+.avatar.sm {
+  @apply relative inline-flex;
+  /* display: inline-flex;
+  position: relative; */
+}
+.avatar.lg {
+  @apply relative inline-flex;
+  /* display: inline-flex;
+  position: relative; */
+}
+
+.avatar>div {
+  @apply block overflow-hidden; 
+  /* display: block;
+  overflow: hidden; */
+}
+
+.avatar img {
+  @apply object-cover w-full h-full;
+  /* height: 100%;
+  object-fit: cover;
+  width: 100%; */
+}
+
+.avatar.placeholder>div {
+  @apply flex items-center justify-center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.avatar-group {
+  @apply flex overflow-hidden;
+  /* display: flex;
+  overflow: hidden; */
+}
+
+.avatar-group .avatar {
+  --tw-border-opacity: 1;
+  border-color: hsla(0 0 100%);
+  border-radius: 9999px;
+  border-width: 4px;
+  overflow: hidden;
+  margin: -6px;
+}
+
+
+
+.avatar.online:before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--su)/var(--tw-bg-opacity,1));
+  border-radius: 9999px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  height: 15%;
+  top: 7%;
+  right: 7%;
+  box-shadow: 0 0 0 2px hsl(var(--b1));
+}
+
+.avatar.offline:before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--b3)/var(--tw-bg-opacity,1));
+  border-radius: 9999px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  height: 15%;
+  top: 7%;
+  right: 7%;
+  box-shadow: 0 0 0 2px hsl(var(--b1));
+}
+
+.avatar.sm.online:before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--su)/var(--tw-bg-opacity,1));
+  border-radius: 9999px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  height: 15%;
+  top: 7%;
+  right: 7%;
+  box-shadow: 0 0 0 2px hsl(var(--b1));
+}
+
+.avatar.sm.offline:before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--b3)/var(--tw-bg-opacity,1));
+  border-radius: 9999px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  height: 15%;
+  top: 7%;
+  right: 7%;
+  box-shadow: 0 0 0 2px hsl(var(--b1));
+}
+.avatar.online:before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--su)/var(--tw-bg-opacity,1));
+  border-radius: 9999px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  height: 15%;
+  top: 7%;
+  right: 7%;
+  box-shadow: 0 0 0 2px hsl(var(--b1));
+}
+
+.avatar.offline:before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--b3)/var(--tw-bg-opacity,1));
+  border-radius: 9999px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  height: 15%;
+  top: 7%;
+  right: 7%;
+  box-shadow: 0 0 0 2px hsl(var(--b1));
+}
+
+.avatar.lg.online:before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--su)/var(--tw-bg-opacity,1));
+  border-radius: 9999px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  height: 15%;
+  top: 7%;
+  right: 7%;
+  box-shadow: 0 0 0 2px hsl(var(--b1));
+}
+
+.avatar.lg.offline:before {
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--b3)/var(--tw-bg-opacity,1));
+  border-radius: 9999px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  height: 15%;
+  top: 7%;
+  right: 7%;
+  box-shadow: 0 0 0 2px hsl(var(--b1));
+}
+
+
