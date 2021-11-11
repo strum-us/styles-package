@@ -147,10 +147,10 @@
 /* ------ nav ------ */
 .nav{
   @apply relative flex flex-col h-screen bg-white;
-  min-width: 240px;
+  width: 240px;
 }
 .modal .nav{
-  min-width: 240px;
+  width: 240px;
 }
 
 .nav-header{
@@ -208,10 +208,13 @@
 
 .modal{
   @apply flex flex-row overflow-hidden bg-white border shadow-lg rounded-xl;
-  width: 1000px;
+  min-width: 1000px;
+  max-width: 1440px;
 }
 .modal.sm{
-  @apply py-8 w-96;
+  @apply py-8;
+  min-width: 384px;
+  max-width: 384px;
 }
 
 .modal-body{
@@ -263,6 +266,7 @@
 
 .dropdown{
   @apply flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50;
+  max-width: 389px;
 }
 .dropdown-item-h{
   @apply flex flex-row items-center px-5 py-4 cursor-pointer select-none hover:bg-gray-200 place-content-between;
