@@ -5,161 +5,159 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>signin</title>
-  <link rel="stylesheet" href="styles/tailwind.css">
-  <link rel="stylesheet" href="styles/custom.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/tailwind.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet">
   </link>
 </head>
 
-<body class="flex flex-col items-center justify-center gap-10 m-12 bg-primary">
+<body class="flex flex-row w-full h-screen ">
+  <div w3-include-html="./navigation.html"> </div>
 
-  <div class="modal sm">
-    <div class="modal-body">
-      <div class="mb-6 modal-body-header">
-        Sign in
-      </div>
-      <div class="flex flex-col space-y-4">
-        <div class=" modal-body-subtitle">
-          <div class="input-form">
-            <span class="input-label">Email address</span>
-            <div class="input">
-              <div contenteditable="true" class="input-body" placeholder="Enter your email"></div>
+
+  <div class="flex-grow h-full overflow-auto bg-gray-300 ">
+    <!-- 여기를 수정해주세요 :) -->
+
+    <div class="modal sm">
+      <div class="modal-body">
+        <div class="mb-6 modal-body-header">
+          Sign in
+        </div>
+        <div class="flex flex-col space-y-4">
+          <div class=" modal-body-subtitle">
+            <div class="input-form">
+              <span class="input-label">Email address</span>
+              <div class="input">
+                <div contenteditable="true" class="input-body" placeholder="Search"></div>
+              </div>
+              <span class="hidden input-negative">input-negative</span>
             </div>
           </div>
-        </div>
-        <div class=" modal-body-subtitle">
-          <div class="input-form">
-            <span class="input-label">Set password</span>
-            <div class="input">
-              <div contenteditable="true" class="input-body" placeholder="Enter your password"></div>
+          <div class=" modal-body-subtitle">
+            <div class="input-form">
+              <span class="input-label">Set password</span>
+              <div class="input">
+                <div contenteditable="true" class="input-body" placeholder="Enter your password"></div>
+              </div>
+              <span class="hidden input-negative">input-negative</span>
             </div>
           </div>
-        </div>
-        <div class="modal-body-subtitle">
-          <div class="check-form">
-            <input type="checkbox" name="strum" id="strum" class="checked:bg-blue-600 checked:border-transparent">
-            <label for="strum">Show password</label>
-          </div>
-        </div>
-        <div class="modal-body-subtitle">
-          <div class="btn full solid">
-            Log in
-          </div>
-        </div>
-        <div class="flex flex-row items-center px-36">
-          <div class="divider-h"></div>
-          <div class="px-2">or</div>
-          <div class="divider-h"></div>
-        </div>
-        <div class="modal-body-subtitle">
-          <div class="btn full primary">
-            <div class="icon-container">
-              <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M22.6022 10.0041C22.5605 9.77346 22.4391 9.56483 22.2593 9.4146C22.0794 9.26436 21.8526 9.18206 21.6182 9.18205H12.2002C11.935 9.18205 11.6806 9.28741 11.4931 9.47495C11.3056 9.66248 11.2002 9.91684 11.2002 10.1821V14.0501C11.2002 14.3153 11.3056 14.5696 11.4931 14.7572C11.6806 14.9447 11.935 15.0501 12.2002 15.0501H16.1622C15.8801 15.5263 15.4933 15.9322 15.0312 16.2371C14.1859 16.7729 13.2007 17.0461 12.2002 17.0221C11.1628 17.0102 10.1555 16.6718 9.32149 16.0548C8.48745 15.4377 7.86907 14.5736 7.55421 13.5851V13.5831C7.20396 12.5564 7.20396 11.4427 7.55421 10.4161V10.4141C7.86937 9.42579 8.48786 8.56192 9.32186 7.94513C10.1559 7.32834 11.163 6.98996 12.2002 6.97805C12.7765 6.96478 13.3498 7.06546 13.8871 7.27431C14.4244 7.48315 14.9152 7.79605 15.3312 8.19505C15.5201 8.37599 15.7723 8.47575 16.0338 8.47294C16.2953 8.47014 16.5453 8.365 16.7302 8.18005L19.5982 5.31205C19.6932 5.21711 19.7682 5.10401 19.8185 4.97948C19.8689 4.85495 19.8936 4.72155 19.8913 4.58724C19.889 4.45294 19.8596 4.32048 19.8049 4.19777C19.7503 4.07507 19.6715 3.96463 19.5732 3.87305C17.5772 2.00162 14.9362 0.972479 12.2002 1.00005C10.1601 0.993973 8.1588 1.55802 6.42211 2.62859C4.68541 3.69916 3.28237 5.23367 2.37122 7.05905L2.37021 7.06105C1.59778 8.59266 1.19695 10.2847 1.20022 12.0001C1.2026 13.7151 1.60312 15.4061 2.37021 16.9401L2.37122 16.9411C3.28237 18.7664 4.68541 20.3009 6.42211 21.3715C8.1588 22.4421 10.1601 23.0061 12.2002 23.0001C14.8857 23.0682 17.4956 22.1069 19.4952 20.3131L19.4962 20.3121C20.5801 19.2694 21.434 18.0116 22.003 16.6194C22.572 15.2272 22.8435 13.7314 22.8002 12.2281C22.8006 11.4823 22.7343 10.738 22.6022 10.0041ZM12.2002 3.00005C14.0711 2.98198 15.8978 3.56878 17.4082 4.67305L15.9552 6.12605C14.8529 5.36322 13.5406 4.96203 12.2002 4.97805C10.9764 4.9841 9.77628 5.3162 8.72345 5.94016C7.67062 6.56413 6.8031 7.45741 6.21022 8.52805L5.14222 7.70005L4.55722 7.24605C5.36196 5.94398 6.4871 4.86998 7.82516 4.12663C9.16323 3.38328 10.6695 2.99541 12.2002 3.00005V3.00005ZM3.68022 14.9031C3.04107 13.0205 3.04107 10.9796 3.68022 9.09705L5.46221 10.4791C5.23435 11.4803 5.23435 12.5199 5.46221 13.5211L3.68022 14.9031ZM12.2002 21.0001C10.6694 21.0049 9.16286 20.6171 7.8246 19.8737C6.48634 19.1304 5.36105 18.0563 4.55622 16.7541L4.93521 16.4601L6.21122 15.4701C6.80368 16.541 7.67091 17.4346 8.72359 18.059C9.77626 18.6833 10.9763 19.0157 12.2002 19.0221C13.3459 19.0358 14.4786 18.7788 15.5062 18.2721L17.1972 19.5851C15.7095 20.5436 13.9696 21.0363 12.2002 21.0001V21.0001ZM18.7262 18.2401L18.5432 18.0971L17.1662 17.0281C17.8886 16.2477 18.3742 15.278 18.5662 14.2321C18.5929 14.0877 18.5875 13.9392 18.5504 13.7972C18.5133 13.6552 18.4454 13.5231 18.3515 13.4103C18.2575 13.2974 18.1399 13.2067 18.007 13.1444C17.874 13.0822 17.729 13.0499 17.5822 13.0501H13.2002V11.1821H20.7492C20.7832 11.5271 20.8002 11.8771 20.8002 12.2281C20.8585 14.4166 20.1217 16.5521 18.7262 18.2391V18.2401Z"
-                  fill="currentColor" />
-              </svg>
-            </div>
-            <span>Continue with Google</span>
-          </div>
-        </div>
-        <!-- <div class="modal-body-subtitle">
-                    <div class="flex">
-                        <a href="#" class="text-gray-400 sm info-link">By proceeding, you agree to Strum’s Terms and Service, &Privacy policy.</a>
-                    </div>
-                </div> -->
-      </div>
-    </div>
-  </div>
-  <div class="modal sm">
-    <div class="modal-body">
-      <div class="mb-6 modal-body-header">
-        Sign up
-      </div>
-      <div class="flex flex-col space-y-4">
-        <div class=" modal-body-subtitle">
-          <div class="input-form">
-            <span class="input-label">User name</span>
-            <div class="input">
-              <div contenteditable="true" class="input-body" placeholder="Enter user name"></div>
+          <div class="modal-body-subtitle">
+            <div class="check-form">
+              <input type="checkbox" name="strum" id="strum" class="checked:bg-blue-600 checked:border-transparent">
+              <label for="strum">Show password</label>
             </div>
           </div>
-        </div>
-        <div class=" modal-body-subtitle">
-          <div class="input-form">
-            <span class="input-label">Email address</span>
-            <div class="input">
-              <div contenteditable="true" class="input-body" placeholder="Enter your email"></div>
+          <div class="modal-body-subtitle">
+            <div class="btn full solid">
+              Log in
             </div>
           </div>
-        </div>
-        <div class=" modal-body-subtitle">
-          <div class="input-form">
-            <span class="input-label">Set password</span>
-            <div class="input">
-              <div contenteditable="true" class="input-body" placeholder="Enter your password"></div>
+          <div class="flex flex-row items-center px-36">
+            <div class="divider-h"></div>
+            <div class="px-2">or</div>
+            <div class="divider-h"></div>
+          </div>
+          <div class="modal-body-subtitle">
+            <div class="btn full primary">
+              <div class="icon-container">
+                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.6022 10.0041C22.5605 9.77346 22.4391 9.56483 22.2593 9.4146C22.0794 9.26436 21.8526 9.18206 21.6182 9.18205H12.2002C11.935 9.18205 11.6806 9.28741 11.4931 9.47495C11.3056 9.66248 11.2002 9.91684 11.2002 10.1821V14.0501C11.2002 14.3153 11.3056 14.5696 11.4931 14.7572C11.6806 14.9447 11.935 15.0501 12.2002 15.0501H16.1622C15.8801 15.5263 15.4933 15.9322 15.0312 16.2371C14.1859 16.7729 13.2007 17.0461 12.2002 17.0221C11.1628 17.0102 10.1555 16.6718 9.32149 16.0548C8.48745 15.4377 7.86907 14.5736 7.55421 13.5851V13.5831C7.20396 12.5564 7.20396 11.4427 7.55421 10.4161V10.4141C7.86937 9.42579 8.48786 8.56192 9.32186 7.94513C10.1559 7.32834 11.163 6.98996 12.2002 6.97805C12.7765 6.96478 13.3498 7.06546 13.8871 7.27431C14.4244 7.48315 14.9152 7.79605 15.3312 8.19505C15.5201 8.37599 15.7723 8.47575 16.0338 8.47294C16.2953 8.47014 16.5453 8.365 16.7302 8.18005L19.5982 5.31205C19.6932 5.21711 19.7682 5.10401 19.8185 4.97948C19.8689 4.85495 19.8936 4.72155 19.8913 4.58724C19.889 4.45294 19.8596 4.32048 19.8049 4.19777C19.7503 4.07507 19.6715 3.96463 19.5732 3.87305C17.5772 2.00162 14.9362 0.972479 12.2002 1.00005C10.1601 0.993973 8.1588 1.55802 6.42211 2.62859C4.68541 3.69916 3.28237 5.23367 2.37122 7.05905L2.37021 7.06105C1.59778 8.59266 1.19695 10.2847 1.20022 12.0001C1.2026 13.7151 1.60312 15.4061 2.37021 16.9401L2.37122 16.9411C3.28237 18.7664 4.68541 20.3009 6.42211 21.3715C8.1588 22.4421 10.1601 23.0061 12.2002 23.0001C14.8857 23.0682 17.4956 22.1069 19.4952 20.3131L19.4962 20.3121C20.5801 19.2694 21.434 18.0116 22.003 16.6194C22.572 15.2272 22.8435 13.7314 22.8002 12.2281C22.8006 11.4823 22.7343 10.738 22.6022 10.0041ZM12.2002 3.00005C14.0711 2.98198 15.8978 3.56878 17.4082 4.67305L15.9552 6.12605C14.8529 5.36322 13.5406 4.96203 12.2002 4.97805C10.9764 4.9841 9.77628 5.3162 8.72345 5.94016C7.67062 6.56413 6.8031 7.45741 6.21022 8.52805L5.14222 7.70005L4.55722 7.24605C5.36196 5.94398 6.4871 4.86998 7.82516 4.12663C9.16323 3.38328 10.6695 2.99541 12.2002 3.00005V3.00005ZM3.68022 14.9031C3.04107 13.0205 3.04107 10.9796 3.68022 9.09705L5.46221 10.4791C5.23435 11.4803 5.23435 12.5199 5.46221 13.5211L3.68022 14.9031ZM12.2002 21.0001C10.6694 21.0049 9.16286 20.6171 7.8246 19.8737C6.48634 19.1304 5.36105 18.0563 4.55622 16.7541L4.93521 16.4601L6.21122 15.4701C6.80368 16.541 7.67091 17.4346 8.72359 18.059C9.77626 18.6833 10.9763 19.0157 12.2002 19.0221C13.3459 19.0358 14.4786 18.7788 15.5062 18.2721L17.1972 19.5851C15.7095 20.5436 13.9696 21.0363 12.2002 21.0001V21.0001ZM18.7262 18.2401L18.5432 18.0971L17.1662 17.0281C17.8886 16.2477 18.3742 15.278 18.5662 14.2321C18.5929 14.0877 18.5875 13.9392 18.5504 13.7972C18.5133 13.6552 18.4454 13.5231 18.3515 13.4103C18.2575 13.2974 18.1399 13.2067 18.007 13.1444C17.874 13.0822 17.729 13.0499 17.5822 13.0501H13.2002V11.1821H20.7492C20.7832 11.5271 20.8002 11.8771 20.8002 12.2281C20.8585 14.4166 20.1217 16.5521 18.7262 18.2391V18.2401Z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+              <span>Continue with Google</span>
             </div>
           </div>
-        </div>
-        <div class="modal-body-subtitle">
-          <div class="check-form">
-            <input type="checkbox" name="strum" id="strum" class="checked:bg-blue-600 checked:border-transparent">
-            <label for="strum">Show password</label>
-          </div>
-        </div>
-        <div class="modal-body-subtitle">
-          <div class="btn full solid">
-            Sign up
-          </div>
-        </div>
-        <div class="flex flex-row items-center px-36">
-          <div class="divider-h"></div>
-          <div class="px-2">or</div>
-          <div class="divider-h"></div>
-        </div>
-        <div class="modal-body-subtitle">
-          <div class="btn full primary">
-            <div class="icon-container">
-              <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M22.6022 10.0041C22.5605 9.77346 22.4391 9.56483 22.2593 9.4146C22.0794 9.26436 21.8526 9.18206 21.6182 9.18205H12.2002C11.935 9.18205 11.6806 9.28741 11.4931 9.47495C11.3056 9.66248 11.2002 9.91684 11.2002 10.1821V14.0501C11.2002 14.3153 11.3056 14.5696 11.4931 14.7572C11.6806 14.9447 11.935 15.0501 12.2002 15.0501H16.1622C15.8801 15.5263 15.4933 15.9322 15.0312 16.2371C14.1859 16.7729 13.2007 17.0461 12.2002 17.0221C11.1628 17.0102 10.1555 16.6718 9.32149 16.0548C8.48745 15.4377 7.86907 14.5736 7.55421 13.5851V13.5831C7.20396 12.5564 7.20396 11.4427 7.55421 10.4161V10.4141C7.86937 9.42579 8.48786 8.56192 9.32186 7.94513C10.1559 7.32834 11.163 6.98996 12.2002 6.97805C12.7765 6.96478 13.3498 7.06546 13.8871 7.27431C14.4244 7.48315 14.9152 7.79605 15.3312 8.19505C15.5201 8.37599 15.7723 8.47575 16.0338 8.47294C16.2953 8.47014 16.5453 8.365 16.7302 8.18005L19.5982 5.31205C19.6932 5.21711 19.7682 5.10401 19.8185 4.97948C19.8689 4.85495 19.8936 4.72155 19.8913 4.58724C19.889 4.45294 19.8596 4.32048 19.8049 4.19777C19.7503 4.07507 19.6715 3.96463 19.5732 3.87305C17.5772 2.00162 14.9362 0.972479 12.2002 1.00005C10.1601 0.993973 8.1588 1.55802 6.42211 2.62859C4.68541 3.69916 3.28237 5.23367 2.37122 7.05905L2.37021 7.06105C1.59778 8.59266 1.19695 10.2847 1.20022 12.0001C1.2026 13.7151 1.60312 15.4061 2.37021 16.9401L2.37122 16.9411C3.28237 18.7664 4.68541 20.3009 6.42211 21.3715C8.1588 22.4421 10.1601 23.0061 12.2002 23.0001C14.8857 23.0682 17.4956 22.1069 19.4952 20.3131L19.4962 20.3121C20.5801 19.2694 21.434 18.0116 22.003 16.6194C22.572 15.2272 22.8435 13.7314 22.8002 12.2281C22.8006 11.4823 22.7343 10.738 22.6022 10.0041ZM12.2002 3.00005C14.0711 2.98198 15.8978 3.56878 17.4082 4.67305L15.9552 6.12605C14.8529 5.36322 13.5406 4.96203 12.2002 4.97805C10.9764 4.9841 9.77628 5.3162 8.72345 5.94016C7.67062 6.56413 6.8031 7.45741 6.21022 8.52805L5.14222 7.70005L4.55722 7.24605C5.36196 5.94398 6.4871 4.86998 7.82516 4.12663C9.16323 3.38328 10.6695 2.99541 12.2002 3.00005V3.00005ZM3.68022 14.9031C3.04107 13.0205 3.04107 10.9796 3.68022 9.09705L5.46221 10.4791C5.23435 11.4803 5.23435 12.5199 5.46221 13.5211L3.68022 14.9031ZM12.2002 21.0001C10.6694 21.0049 9.16286 20.6171 7.8246 19.8737C6.48634 19.1304 5.36105 18.0563 4.55622 16.7541L4.93521 16.4601L6.21122 15.4701C6.80368 16.541 7.67091 17.4346 8.72359 18.059C9.77626 18.6833 10.9763 19.0157 12.2002 19.0221C13.3459 19.0358 14.4786 18.7788 15.5062 18.2721L17.1972 19.5851C15.7095 20.5436 13.9696 21.0363 12.2002 21.0001V21.0001ZM18.7262 18.2401L18.5432 18.0971L17.1662 17.0281C17.8886 16.2477 18.3742 15.278 18.5662 14.2321C18.5929 14.0877 18.5875 13.9392 18.5504 13.7972C18.5133 13.6552 18.4454 13.5231 18.3515 13.4103C18.2575 13.2974 18.1399 13.2067 18.007 13.1444C17.874 13.0822 17.729 13.0499 17.5822 13.0501H13.2002V11.1821H20.7492C20.7832 11.5271 20.8002 11.8771 20.8002 12.2281C20.8585 14.4166 20.1217 16.5521 18.7262 18.2391V18.2401Z"
-                  fill="currentColor" />
-              </svg>
-            </div>
-            <span>Continue with Google</span>
-          </div>
-        </div>
-        <div class="modal-body-subtitle">
-          <div class="flex">
-            <a href="#" class="text-gray-400 sm info-link">By proceeding, you agree to Strum’s Terms and
-              Service, &Privacy policy.</a>
-          </div>
+          <!-- <div class="modal-body-subtitle">
+                      <div class="flex">
+                          <a href="#" class="text-gray-400 sm info-link">By proceeding, you agree to Strum’s Terms and Service, &Privacy policy.</a>
+                      </div>
+                  </div> -->
         </div>
       </div>
     </div>
+    <div class="modal sm">
+      <div class="modal-body">
+        <div class="mb-6 modal-body-header">
+          Sign up
+        </div>
+        <div class="flex flex-col space-y-4">
+          <div class=" modal-body-subtitle">
+            <div class="input-form">
+              <span class="input-label">User name</span>
+              <div class="input">
+                <div contenteditable="true" class="input-body" placeholder="Enter user name"></div>
+              </div>
+              <span class="hidden input-negative">input-negative</span>
+            </div>
+          </div>
+          <div class=" modal-body-subtitle">
+            <div class="input-form">
+              <span class="input-label">Email address</span>
+              <div class="input">
+                <div contenteditable="true" class="input-body" placeholder="Enter your email"></div>
+              </div>
+              <span class="hidden input-negative">input-negative</span>
+            </div>
+          </div>
+          <div class=" modal-body-subtitle">
+            <div class="input-form">
+              <span class="input-label">Set password</span>
+              <div class="input">
+                <div contenteditable="true" class="input-body" placeholder="Enter your password"></div>
+              </div>
+              <span class="hidden input-negative">input-negative</span>
+            </div>
+          </div>
+          <div class="modal-body-subtitle">
+            <div class="check-form">
+              <input type="checkbox" name="strum" id="strum" class="checked:bg-blue-600 checked:border-transparent">
+              <label for="strum">Show password</label>
+            </div>
+          </div>
+          <div class="modal-body-subtitle">
+            <div class="btn full solid">
+              Sign up
+            </div>
+          </div>
+          <div class="flex flex-row items-center px-36">
+            <div class="divider-h"></div>
+            <div class="px-2">or</div>
+            <div class="divider-h"></div>
+          </div>
+          <div class="modal-body-subtitle">
+            <div class="btn full primary">
+              <div class="icon-container">
+                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.6022 10.0041C22.5605 9.77346 22.4391 9.56483 22.2593 9.4146C22.0794 9.26436 21.8526 9.18206 21.6182 9.18205H12.2002C11.935 9.18205 11.6806 9.28741 11.4931 9.47495C11.3056 9.66248 11.2002 9.91684 11.2002 10.1821V14.0501C11.2002 14.3153 11.3056 14.5696 11.4931 14.7572C11.6806 14.9447 11.935 15.0501 12.2002 15.0501H16.1622C15.8801 15.5263 15.4933 15.9322 15.0312 16.2371C14.1859 16.7729 13.2007 17.0461 12.2002 17.0221C11.1628 17.0102 10.1555 16.6718 9.32149 16.0548C8.48745 15.4377 7.86907 14.5736 7.55421 13.5851V13.5831C7.20396 12.5564 7.20396 11.4427 7.55421 10.4161V10.4141C7.86937 9.42579 8.48786 8.56192 9.32186 7.94513C10.1559 7.32834 11.163 6.98996 12.2002 6.97805C12.7765 6.96478 13.3498 7.06546 13.8871 7.27431C14.4244 7.48315 14.9152 7.79605 15.3312 8.19505C15.5201 8.37599 15.7723 8.47575 16.0338 8.47294C16.2953 8.47014 16.5453 8.365 16.7302 8.18005L19.5982 5.31205C19.6932 5.21711 19.7682 5.10401 19.8185 4.97948C19.8689 4.85495 19.8936 4.72155 19.8913 4.58724C19.889 4.45294 19.8596 4.32048 19.8049 4.19777C19.7503 4.07507 19.6715 3.96463 19.5732 3.87305C17.5772 2.00162 14.9362 0.972479 12.2002 1.00005C10.1601 0.993973 8.1588 1.55802 6.42211 2.62859C4.68541 3.69916 3.28237 5.23367 2.37122 7.05905L2.37021 7.06105C1.59778 8.59266 1.19695 10.2847 1.20022 12.0001C1.2026 13.7151 1.60312 15.4061 2.37021 16.9401L2.37122 16.9411C3.28237 18.7664 4.68541 20.3009 6.42211 21.3715C8.1588 22.4421 10.1601 23.0061 12.2002 23.0001C14.8857 23.0682 17.4956 22.1069 19.4952 20.3131L19.4962 20.3121C20.5801 19.2694 21.434 18.0116 22.003 16.6194C22.572 15.2272 22.8435 13.7314 22.8002 12.2281C22.8006 11.4823 22.7343 10.738 22.6022 10.0041ZM12.2002 3.00005C14.0711 2.98198 15.8978 3.56878 17.4082 4.67305L15.9552 6.12605C14.8529 5.36322 13.5406 4.96203 12.2002 4.97805C10.9764 4.9841 9.77628 5.3162 8.72345 5.94016C7.67062 6.56413 6.8031 7.45741 6.21022 8.52805L5.14222 7.70005L4.55722 7.24605C5.36196 5.94398 6.4871 4.86998 7.82516 4.12663C9.16323 3.38328 10.6695 2.99541 12.2002 3.00005V3.00005ZM3.68022 14.9031C3.04107 13.0205 3.04107 10.9796 3.68022 9.09705L5.46221 10.4791C5.23435 11.4803 5.23435 12.5199 5.46221 13.5211L3.68022 14.9031ZM12.2002 21.0001C10.6694 21.0049 9.16286 20.6171 7.8246 19.8737C6.48634 19.1304 5.36105 18.0563 4.55622 16.7541L4.93521 16.4601L6.21122 15.4701C6.80368 16.541 7.67091 17.4346 8.72359 18.059C9.77626 18.6833 10.9763 19.0157 12.2002 19.0221C13.3459 19.0358 14.4786 18.7788 15.5062 18.2721L17.1972 19.5851C15.7095 20.5436 13.9696 21.0363 12.2002 21.0001V21.0001ZM18.7262 18.2401L18.5432 18.0971L17.1662 17.0281C17.8886 16.2477 18.3742 15.278 18.5662 14.2321C18.5929 14.0877 18.5875 13.9392 18.5504 13.7972C18.5133 13.6552 18.4454 13.5231 18.3515 13.4103C18.2575 13.2974 18.1399 13.2067 18.007 13.1444C17.874 13.0822 17.729 13.0499 17.5822 13.0501H13.2002V11.1821H20.7492C20.7832 11.5271 20.8002 11.8771 20.8002 12.2281C20.8585 14.4166 20.1217 16.5521 18.7262 18.2391V18.2401Z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+              <span>Continue with Google</span>
+            </div>
+          </div>
+          <div class="modal-body-subtitle">
+            <div class="flex">
+              <a href="#" class="text-gray-400 sm info-link">By proceeding, you agree to Strum’s Terms and
+                Service, &Privacy policy.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
 
-
-
-
-
-  <script>
-    function copyFontStype() {
-      const fontfile = `
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet"></link>       
-                `
-      navigator.clipboard.writeText(fontfile);
-      console.log(fontfile)
-    }
-  </script>
-
+  <a href="#" class="fixed z-10 flex flex-row items-center justify-center w-10 h-10 bg-white rounded right-5 bottom-5">
+    <div> ^ </div>
+  </a>
+  <script src="../scripts/includeHTML.js"></script> <!-- html에 html import 하는 스크립트 -->
 </body>
 
 </html>
