@@ -184,27 +184,16 @@
   
 }
 .nav-item:hover{
-  @apply bg-gray-100 ;
+  @apply bg-gray-200 ;
 }
 .nav-item:active{
-  @apply bg-gray-200 ;
+  @apply bg-gray-300 ;
 }
 
 .nav-item-body{
-  @apply text-gray-800 typo-small whitespace-nowrap;
+  @apply  text-gray-800 typo-small whitespace-nowrap;
+  /* @apply flex flex-row items-center w-full h-full; */
 }
-
-
-/* 
-.nav-item-icon{
-  @apply mr-2 text-gray-600 fill-current;
-}
-.nav-item-icon{
-  @apply h-full;
-}
-.nav-item svg{
-  @apply py-2.5;
-} */
 
 
 
@@ -222,7 +211,7 @@
 }
 
 .modal-body{
-  @apply flex flex-col w-full px-16 bg-gray-100 ;
+  @apply flex flex-col w-full px-16 bg-white ;
   
 }
 .modal.sm > .modal-body{
