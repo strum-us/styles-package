@@ -126,7 +126,7 @@
   @apply flex-grow-0 flex-shrink-0;
 }
 .icon-container svg{
-  @apply w-5 y-5 text-negative;
+  @apply w-5 text-negative;
 }
 .lg .icon-container svg{
   @apply w-6;
