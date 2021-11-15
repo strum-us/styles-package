@@ -28,6 +28,17 @@
   @apply flex flex-col items-center justify-center;
 }
 
+
+
+.hover-container .hover-view {
+  visibility: hidden;
+}
+
+.hover-container:hover>.hover-view {
+  visibility: visible;
+} 
+
+
 /* scroll bar ----------------------------------------------------------- */
 .overflow-y-auto::-webkit-scrollbar {
   background: transparent;
@@ -115,14 +126,14 @@
   @apply flex-grow-0 flex-shrink-0;
 }
 .icon-container svg{
-  @apply w-5 text-negative;
+  @apply w-5 y-5 text-negative;
 }
 .lg .icon-container svg{
-  @apply w-6 ;
+  @apply w-6;
 }
 
 .sm .icon-container svg{
-  @apply w-4 ;
+  @apply w-4;
 }
 
 
@@ -209,6 +220,8 @@
   min-width: 384px;
   max-width: 384px;
 }
+
+
 
 .modal-body{
   @apply flex flex-col w-full px-16 bg-white ;
@@ -623,7 +636,7 @@ label:active:after {
 /* --------------------------------------------------------------------------------------------------------- */
 
 .avatar {
-  @apply relative inline-flex;
+  @apply relative inline-flex overflow-hidden;
   /* display: inline-flex;
   position: relative; */
 }
