@@ -106,12 +106,15 @@
 .typo-title {
   @apply text-xl;
 }
+
 .typo-headtitle{
 @apply text-3xl;
 }
+
 .bold {
   @apply font-bold ;
 }
+
 .medium{
   @apply font-medium;
 }
@@ -161,7 +164,7 @@
 
 /* ------ nav ------ */
 .nav{
-  @apply relative flex flex-col h-full bg-gray-100 border-r border-gray-300;
+  @apply relative flex flex-col h-full overflow-y-auto bg-gray-100 border-r border-gray-300;
   width: 240px;
 }
 .modal .nav{
@@ -169,7 +172,7 @@
 }
 
 .nav-header{
-  @apply flex items-center h-16 px-5 space-x-2 text-gray-700 transition-all duration-200 cursor-pointer select-none typo-body;
+  @apply flex items-center h-16 px-5 space-x-2 text-black transition-all duration-200 cursor-pointer select-none typo-body;
 }
 .nav-header:hover{
   @apply bg-gray-100;
@@ -181,7 +184,7 @@
   @apply px-4 mt-4 mb-1 text-gray-700 typo-tiny;
 }
 .nav-footer{
-  @apply flex items-center h-16 px-5 text-gray-700 cursor-pointer select-none typo-body;
+  @apply flex items-center h-16 px-5 text-black cursor-pointer select-none typo-body;
   border-top: 1px solid #D4D4D8;
 }
 .nav-footer:hover{
@@ -191,7 +194,7 @@
   @apply bg-gray-200;
 }
 .nav-item{
-  @apply box-border flex flex-row items-center h-10 px-5 space-x-1.5 cursor-pointer select-none;
+  @apply box-border text-black flex flex-row items-center h-10 px-5 space-x-1.5 cursor-pointer select-none;
   
 }
 .nav-item:hover{
@@ -202,7 +205,7 @@
 }
 
 .nav-item-body{
-  @apply  text-gray-800 typo-small whitespace-nowrap;
+  @apply typo-small whitespace-nowrap;
   /* @apply flex flex-row items-center w-full h-full; */
 }
 
@@ -460,10 +463,13 @@
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
 .input{
-  @apply box-border flex flex-row items-center w-full h-10 px-2 space-x-2 overflow-hidden text-gray-400 border border-gray-300 rounded-lg cursor-pointer whitespace-nowrap focus:text-black typo-small bg-gray-50;
+  @apply relative flex flex-row items-center w-full h-10 px-2 space-x-2 overflow-hidden text-gray-400 border border-gray-300 rounded-lg cursor-pointer whitespace-nowrap focus:text-black typo-small bg-gray-50;
 }
 .input-body{
-  @apply flex flex-row items-center w-full whitespace-nowrap;
+  @apply flex flex-row items-center w-full py-1 bg-gray-50 whitespace-nowrap;
+}
+.input-body.icon{
+  @apply pl-6;
 }
 .input-form{
   @apply flex flex-col w-full space-y-1 overflow-hidden;
@@ -478,6 +484,12 @@
   @apply flex-grow-0 flex-shrink-0;
 } */
 
+.input .icon-container{
+  @apply absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 
 .input.lg{
@@ -485,6 +497,9 @@
 }
 .input.disabled{
   @apply text-gray-300 bg-gray-100 cursor-default select-none;
+}
+.input.disabled > .input-body{
+  @apply bg-gray-100 cursor-default select-none;
 }
 .input > div{
   @apply typo-small;
@@ -495,12 +510,19 @@
 .input:focus-within{
   @apply text-gray-800 bg-white border-primary;
 }
+.input:focus-within > .input-body{
+  @apply bg-white;
+}
 .input.success:focus-within{
   @apply border-success;
 }
 .input.negative:focus-within{
   @apply bg-red-100 border-negative text-negative;
 }
+.input.negative:focus-within > .input-body{
+  @apply bg-red-100;
+}
+
 :focus{
   outline: none;
 }
@@ -508,7 +530,7 @@
 /* .input-icon{
   @apply flex-shrink-0 w-5;
 } */
-
+/* 
 div[contenteditable=true] {
   @apply w-full overflow-hidden text-black typo-small;
 }
@@ -516,9 +538,9 @@ div[contenteditable=true] {
 
 div[contenteditable=true]:empty:before{
   content: attr(placeholder);
-  display: block; /* For Firefox */
+  display: block;  For Firefox 
   @apply text-gray-400;
-}
+} */
 
 
 
@@ -635,46 +657,92 @@ label:active:after {
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
 
+.avatar{
+  @apply relative flex flex-row;
+}
+.avatar>div{
+  @apply w-10 h-10 overflow-hidden rounded-full;
+}
+.avatar img{
+  @apply w-full h-full;
+}
+.avatar.placeholder .placeholder-body{
+  @apply full flex-row-center typo-body bold ;
+}
+
+.avatar-group{
+  @apply relative;
+}
+.avatar-group .avatar{
+  margin-left: -12px;
+}
+.avatar-group .avatar > div{
+  @apply shadow-lg;
+}
+.avatar-group .avatar:first-child{
+  @apply ml-0;
+}
+.avatar.circle{
+  @apply border-4 border-success;
+}
+.avatar.online{
+  @apply relative;
+}
+
+
+.avatar.online:after{
+  content: '';
+  top: 1%;
+  right:1%;
+  @apply absolute z-10 block w-3 h-3 rounded-full bg-success;
+}
+
+.avatar.offline:after{
+  content: '';
+  top: 1%;
+  right:1%;
+  @apply absolute z-10 block w-3 h-3 bg-gray-600 rounded-full;
+}
+
+
+
+/* .avatar.online:before{
+  content: '';
+  position: absolute;
+  top: 5%;
+  right:5%;
+  background: red;
+  width: 4px;
+  height: 4px;
+  display: block;
+  z-index: 10;
+} */
+
+/* 
 .avatar {
   @apply relative inline-flex overflow-hidden;
-  /* display: inline-flex;
-  position: relative; */
 }
 .avatar.sm {
   @apply relative inline-flex;
-  /* display: inline-flex;
-  position: relative; */
 }
 .avatar.lg {
   @apply relative inline-flex;
-  /* display: inline-flex;
-  position: relative; */
 }
 
 .avatar>div {
-  @apply block overflow-hidden; 
-  /* display: block;
-  overflow: hidden; */
+  @apply block overflow-hidden;
 }
 
 .avatar img {
   @apply object-cover w-full h-full;
-  /* height: 100%;
-  object-fit: cover;
-  width: 100%; */
 }
 
 .avatar.placeholder>div {
   @apply flex items-center justify-center;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .avatar-group {
   @apply flex overflow-hidden;
-  /* display: flex;
-  overflow: hidden; */
 }
 
 .avatar-group .avatar {
@@ -806,5 +874,5 @@ label:active:after {
   right: 7%;
   box-shadow: 0 0 0 2px hsl(var(--b1));
 }
-
+ */
 
