@@ -376,7 +376,7 @@
 
 
 .btn {
-  @apply box-border flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-1 text-gray-500 transition-all duration-200 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small bg-gray-50 ;
+  @apply box-border relative flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-1 text-gray-500 transition-all duration-200 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small bg-gray-50 ;
 }
 .btn.toggle{
   @apply justify-start;
@@ -454,6 +454,23 @@
 
 .btn-form{
   @apply flex flex-row flex-grow-0 flex-shrink-0 w-full mb-6 space-x-3 ;
+}
+
+.noti{
+  @apply relative;
+}
+
+.noti:after{
+  content: '';
+  top: -6px;
+  right: -4px;
+  @apply absolute z-10 block w-4 h-4 rounded-full shadow-md bg-negative;
+}
+
+.sm.noti:after{
+  top: -5px;
+  right: -5px;
+  @apply w-3 h-3;
 }
 
 
