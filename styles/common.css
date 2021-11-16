@@ -126,9 +126,20 @@
 /* --------------------------------------------------------------------------------------------------------- */
 
 .icon-container{
-  @apply flex-grow-0 flex-shrink-0;
+  @apply flex-grow-0 flex-shrink-0 w-5;
 }
-.icon-container svg{
+.lg.icon-container{
+  @apply w-6;
+}
+.sm.icon-container{
+  @apply w-4;
+}
+
+.logo.icon-container{
+  @apply w-12;
+}
+
+/* .icon-container svg{
   @apply w-5;
 }
 .lg .icon-container svg{
@@ -137,7 +148,7 @@
 
 .sm .icon-container svg{
   @apply w-4;
-}
+} */
 
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -227,7 +238,7 @@
 
 
 .modal-body{
-  @apply flex flex-col w-full px-16 bg-white ;
+  @apply flex flex-col w-full px-16 ;
   
 }
 .modal.sm > .modal-body{
@@ -409,8 +420,8 @@
   @apply h-8 px-3 space-x-1 typo-tiny;
 }
 
-.btn.full {
-  @apply flex-grow flex-shrink-0 max-w-none;
+.btn.wide {
+  @apply flex-grow flex-shrink-0 space-x-1 max-w-none;
 }
 .btn.negative:hover{
   @apply bg-red-100 border-negative text-negative; 
@@ -501,10 +512,14 @@
   @apply flex-grow-0 flex-shrink-0;
 } */
 
-.input .icon-container{
+
+.input > .icon-container{
   @apply absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.input .btn .icon-container{
+  @apply relative;
 }
 
 
@@ -579,7 +594,7 @@ div[contenteditable=true]:empty:before{
 /* --------------------------------------------------------------------------------------------------------- */
 
 .info-link{
-  @apply flex flex-row items-center space-x-1 typo-body;
+  @apply flex flex-row items-center space-x-1 cursor-pointer typo-body;
 }
 .info-link.copy{
   @apply underline text-primary hover:text-blue-700 active:text-primary;
