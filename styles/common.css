@@ -387,7 +387,7 @@
 
 
 .btn {
-  @apply box-border relative flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-1 text-gray-500 transition-all duration-200 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small bg-gray-50 ;
+  @apply box-border flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-1 text-gray-500 transition-all duration-200 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small bg-gray-50 ;
 }
 .btn.toggle{
   @apply justify-start;
