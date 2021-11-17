@@ -1,8 +1,6 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "./custom.css";
-/* @import './custom.css'; */
 
 
 .spa {
@@ -234,7 +232,10 @@
   min-width: 384px;
   max-width: 384px;
 }
-
+.modal.sm.calender{
+  min-width: 540px;
+  max-width: 540px;
+}
 
 
 .modal-body{
@@ -288,6 +289,18 @@
   @apply flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50;
   max-width: 389px;
 }
+
+.dropdown.inner{
+  @apply bg-white rounded-none;
+  box-shadow: none;
+}
+.dropdown.inner .dropdown-item-h{
+  @apply py-2 hover:bg-complimentary;
+}
+.dropdown.inner .dropdown-item-title-text{
+  @apply  typo-small;
+}
+
 .dropdown-item-h{
   @apply flex flex-row items-center px-5 py-4 cursor-pointer select-none hover:bg-gray-200 place-content-between;
 }
@@ -301,7 +314,7 @@
 }
 
 .dropdown-item-title-text{
-  @apply text-gray-800 typo-body;
+  @apply text-gray-800 typo-body whitespace-nowrap;
 }
 .dropdown-item-subtext{
   @apply text-gray-500 typo-small whitespace-nowrap medium;
@@ -387,7 +400,7 @@
 
 
 .btn {
-  @apply box-border flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-1 text-gray-500 transition-all duration-200 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small bg-gray-50 ;
+  @apply box-border flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-2 text-gray-500 transition-all duration-200 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small bg-gray-50 ;
 }
 .btn.toggle{
   @apply justify-start;
@@ -566,13 +579,13 @@
 div[contenteditable=true] {
   @apply w-full overflow-hidden text-black typo-small;
 }
-
+ */
 
 div[contenteditable=true]:empty:before{
   content: attr(placeholder);
-  display: block;  For Firefox 
+  display: block;  
   @apply text-gray-400;
-} */
+}
 
 
 
@@ -685,19 +698,31 @@ label:active:after {
 
 /* --------------------------------------------------------------------------------------------------------- */
 /* ---                                                                                                   --- */
-/* ---                                   avatar-daisy 참고                                                --- */
+/* ---                                         avatar                                                    --- */
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
 
-.avatar{
-  @apply relative flex flex-row;
+
+.avatar {
+  @apply inline-block w-8 h-8 overflow-hidden;
 }
-.avatar>div{
-  @apply w-8 h-8 overflow-hidden rounded-full;
+
+.avatar-group .avatar:not(:first-child) {
+  margin-left: -12px;
+  -webkit-mask:radial-gradient(circle 19px at -4px 50%,transparent 99%,#fff 100%);
+      mask:radial-gradient(circle 19px at -4px 50%,transparent 99%,#fff 100%);
 }
-.avatar img{
-  @apply w-full h-full;
+
+.avatar img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
 }
+
+.avatar span {
+  @apply rounded-full;
+}
+
 .avatar.placeholder .placeholder-body{
   @apply full flex-row-center typo-body bold ;
 }
@@ -720,6 +745,9 @@ label:active:after {
 .avatar.online{
   @apply relative;
 }
+.avatar.offline{
+  @apply relative;
+}
 
 
 .avatar.online:after{
@@ -737,174 +765,4 @@ label:active:after {
 }
 
 
-
-/* .avatar.online:before{
-  content: '';
-  position: absolute;
-  top: 5%;
-  right:5%;
-  background: red;
-  width: 4px;
-  height: 4px;
-  display: block;
-  z-index: 10;
-} */
-
-/* 
-.avatar {
-  @apply relative inline-flex overflow-hidden;
-}
-.avatar.sm {
-  @apply relative inline-flex;
-}
-.avatar.lg {
-  @apply relative inline-flex;
-}
-
-.avatar>div {
-  @apply block overflow-hidden;
-}
-
-.avatar img {
-  @apply object-cover w-full h-full;
-}
-
-.avatar.placeholder>div {
-  @apply flex items-center justify-center;
-}
-
-.avatar-group {
-  @apply flex overflow-hidden;
-}
-
-.avatar-group .avatar {
-  --tw-border-opacity: 1;
-  border-color: hsla(0 0 100%);
-  border-radius: 9999px;
-  border-width: 4px;
-  overflow: hidden;
-  margin: -6px;
-}
-
-
-
-.avatar.online:before {
-  content: "";
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--su)/var(--tw-bg-opacity,1));
-  border-radius: 9999px;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-  box-shadow: 0 0 0 2px hsl(var(--b1));
-}
-
-.avatar.offline:before {
-  content: "";
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--b3)/var(--tw-bg-opacity,1));
-  border-radius: 9999px;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-  box-shadow: 0 0 0 2px hsl(var(--b1));
-}
-
-.avatar.sm.online:before {
-  content: "";
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--su)/var(--tw-bg-opacity,1));
-  border-radius: 9999px;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-  box-shadow: 0 0 0 2px hsl(var(--b1));
-}
-
-.avatar.sm.offline:before {
-  content: "";
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--b3)/var(--tw-bg-opacity,1));
-  border-radius: 9999px;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-  box-shadow: 0 0 0 2px hsl(var(--b1));
-}
-.avatar.online:before {
-  content: "";
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--su)/var(--tw-bg-opacity,1));
-  border-radius: 9999px;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-  box-shadow: 0 0 0 2px hsl(var(--b1));
-}
-
-.avatar.offline:before {
-  content: "";
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--b3)/var(--tw-bg-opacity,1));
-  border-radius: 9999px;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-  box-shadow: 0 0 0 2px hsl(var(--b1));
-}
-
-.avatar.lg.online:before {
-  content: "";
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--su)/var(--tw-bg-opacity,1));
-  border-radius: 9999px;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-  box-shadow: 0 0 0 2px hsl(var(--b1));
-}
-
-.avatar.lg.offline:before {
-  content: "";
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--b3)/var(--tw-bg-opacity,1));
-  border-radius: 9999px;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-  box-shadow: 0 0 0 2px hsl(var(--b1));
-}
- */
 
