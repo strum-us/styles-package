@@ -98,7 +98,7 @@
 }
 
 .typo-subtitle {
-  @apply text-lg font-bold;
+  @apply text-lg;
 }
 
 .typo-title {
@@ -207,10 +207,10 @@
   
 }
 .nav-item:hover{
-  @apply bg-gray-200 ;
+  @apply text-white bg-primary bold;
 }
 .nav-item:active{
-  @apply bg-gray-300 ;
+  @apply bg-primary-dark ;
 }
 
 .nav-item-body{
@@ -257,7 +257,7 @@
 }
 
 .modal-body-title{
-  @apply mb-4 text-gray-700 select-none typo-subtitle;
+  @apply mb-4 text-gray-700 select-none typo-subtitle bold;
 }
 .modal.sm  .modal-body-title{
   @apply px-10;
@@ -400,7 +400,7 @@
 
 
 .btn {
-  @apply box-border flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-2 text-gray-500 transition-all duration-200 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small bg-gray-50 ;
+  @apply box-border flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-2 text-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small ;
 }
 .btn.toggle{
   @apply justify-start;
@@ -427,7 +427,7 @@
   @apply text-gray-400 bg-gray-50;
 }
 .btn.lg{
-  @apply h-12 px-6 space-x-2 typo-subtitle;
+  @apply h-12 px-6 space-x-2 typo-subtitle bold;
 }
 .btn.sm{
   @apply h-8 px-3 space-x-1 typo-tiny;
@@ -506,6 +506,12 @@
 .input{
   @apply relative flex flex-row items-center w-full h-10 px-2 space-x-2 overflow-hidden text-gray-400 border border-gray-300 rounded-lg cursor-pointer whitespace-nowrap focus:text-black typo-small bg-gray-50;
 }
+.input.comment{
+  @apply flex-col h-24 overflow-y-auto place-content-between;
+}
+.input.comment > .input-body{
+  @apply pt-3 whitespace-normal;
+}
 .input-body{
   @apply flex flex-row items-center w-full py-1 bg-gray-50 whitespace-nowrap;
 }
@@ -538,7 +544,7 @@
 
 
 .input.lg{
-  @apply h-12 typo-subtitle medium px-3
+  @apply h-12 typo-subtitle px-3
 }
 .input.disabled{
   @apply text-gray-300 bg-gray-100 cursor-default select-none;
@@ -550,7 +556,7 @@
   @apply typo-small;
 }
 .input.lg > div{
-  @apply typo-subtitle;
+  @apply typo-subtitle bold;
 }
 .input:focus-within{
   @apply text-gray-800 bg-white border-primary;
@@ -613,7 +619,7 @@ div[contenteditable=true]:empty:before{
   @apply underline text-primary hover:text-blue-700 active:text-primary;
 }
 .info-link.lg{
-  @apply typo-subtitle medium;
+  @apply typo-subtitle;
 }
 .info-link.sm{
   @apply typo-small;
