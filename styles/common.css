@@ -126,10 +126,10 @@
 .icon-container{
   @apply flex-grow-0 flex-shrink-0 w-5;
 }
-.lg.icon-container{
+.lg .icon-container{
   @apply w-6;
 }
-.sm.icon-container{
+.sm .icon-container{
   @apply w-4;
 }
 

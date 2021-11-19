@@ -295,8 +295,9 @@
 
 
             <!-- 섹션 영역 -->
-            <div class="flex flex-col space-y-16 ">
-              <!-- section -->
+            <div class="flex flex-col space-y-10 ">
+              
+              <!-- 게시글 -->
               <div class="flex flex-row w-full">
                 <div class="flex flex-row justify-end flex-grow-0 flex-shrink-0 w-20 pt-2 pr-4">
                   <!-- avatar -->
@@ -308,33 +309,128 @@
                 </div>
 
                 <div class="flex flex-col px-6 py-6 bg-white border border-gray-300 flex-grow-2 rounded-xl">
-                  <div class="flex flex-row items-end pb-3 space-x-2">
-                    <span class="text-black typo-small bold">Issac Lee</span>
-                    <p class="text-gray-500 typo-tiny">4 mins</p>
-                  </div>
-                  <div class="flex flex-col space-y-4">
-                    <img src="../img/card-img.png" alt="" class="w-full h-52">
-                    <div class="flex flex-col space-y-3 text-gray-600 typo-tiny">
-                      you don't want to run the risk of wasting time and resources on launching an chasing the wrong
-                      audience, are too early or too late to a given market.
+                  <div class="flex flex-row items-center pb-3 place-content-between">
+                    <div class="flex flex-row items-end space-x-2">
+                      <span class="text-black typo-small bold">Issac Lee</span>
+                      <p class="text-gray-500 typo-tiny">4 mins</p>
                     </div>
-                    <div class="flex flex-col">
-                      <div class="flex flex-row items-end pb-3 space-x-2">
-                        <div class="w-6 h-6 border rounded-full flex-row-center border-primary typo-small bold text-primary">1</div>
-                        <div class="flex flex-row items-end space-x-2">
-                          <span class="text-black typo-small bold">Issac Lee</span>
-                          <p class="text-gray-500 typo-tiny">4 mins</p>
+
+                    <div class="btn icon ghost sm">
+                      <div class="icon-container">
+                        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 10C11.6044 10 11.2178 10.1173 10.8889 10.3371C10.56 10.5568 10.3036 10.8692 10.1522 11.2346C10.0009 11.6001 9.96126 12.0022 10.0384 12.3902C10.1156 12.7781 10.3061 13.1345 10.5858 13.4142C10.8655 13.6939 11.2219 13.8844 11.6098 13.9616C11.9978 14.0387 12.3999 13.9991 12.7654 13.8478C13.1308 13.6964 13.4432 13.44 13.6629 13.1111C13.8827 12.7822 14 12.3956 14 12C14 11.4696 13.7893 10.9609 13.4142 10.5858C13.0391 10.2107 12.5304 10 12 10ZM5 10C4.60444 10 4.21776 10.1173 3.88886 10.3371C3.55996 10.5568 3.30362 10.8692 3.15224 11.2346C3.00087 11.6001 2.96126 12.0022 3.03843 12.3902C3.1156 12.7781 3.30608 13.1345 3.58579 13.4142C3.86549 13.6939 4.22186 13.8844 4.60982 13.9616C4.99778 14.0387 5.39992 13.9991 5.76537 13.8478C6.13082 13.6964 6.44318 13.44 6.66294 13.1111C6.8827 12.7822 7 12.3956 7 12C7 11.4696 6.78929 10.9609 6.41421 10.5858C6.03914 10.2107 5.53043 10 5 10ZM19 10C18.6044 10 18.2178 10.1173 17.8889 10.3371C17.56 10.5568 17.3036 10.8692 17.1522 11.2346C17.0009 11.6001 16.9613 12.0022 17.0384 12.3902C17.1156 12.7781 17.3061 13.1345 17.5858 13.4142C17.8655 13.6939 18.2219 13.8844 18.6098 13.9616C18.9978 14.0387 19.3999 13.9991 19.7654 13.8478C20.1308 13.6964 20.4432 13.44 20.6629 13.1111C20.8827 12.7822 21 12.3956 21 12C21 11.4696 20.7893 10.9609 20.4142 10.5858C20.0391 10.2107 19.5304 10 19 10Z" fill="currentColor"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex flex-col space-y-5">
+
+                    <div class="flex flex-col space-y-3">
+                      <img src="../img/card-img.png" alt="" class="w-full h-52">
+                      <div class="flex flex-col space-y-3 text-gray-600 typo-tiny">
+                        you don't want to run the risk of wasting time and resources on launching an chasing the wrong
+                        audience, are too early or too late to a given market.
+                      </div>
+                    </div>
+                    
+                    <div class="flex flex-row">
+                      <div class="w-1.5 mr-4 h-full pb-4 bg-gray-300"></div>
+                      <div class="flex flex-col py-2">
+                        <div class="flex flex-col space-y-5">
+                          <!-- 댓글 -->
+                          <div class="flex flex-col">
+                            <div class="flex flex-row items-end pb-3 ">
+                              <div class="w-6 h-6 mr-2 border rounded-full flex-row-center border-primary typo-small bold text-primary">1</div>
+                              <div class="flex flex-row items-end space-x-2">
+                                <span class="text-black typo-small bold">Issac Lee</span>
+                                <p class="text-gray-500 typo-tiny">4 mins</p>
+                                <div class="px-3 py-1 space-x-1.5 select-none cursor-pointer text-white rounded-full sm flex-row-center bg-primary typo-small">
+                                  <div class="icon-container">
+                                    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.5402 9.00003L8.88021 3.46003C8.3575 3.15819 7.76421 3.00006 7.16061 3.00172C6.557 3.00338 5.96459 3.16476 5.44354 3.46947C4.92249 3.77417 4.49137 4.21135 4.19396 4.7366C3.89655 5.26185 3.74345 5.85646 3.75021 6.46003V17.58C3.75021 18.4871 4.11053 19.357 4.75191 19.9983C5.39328 20.6397 6.26317 21 7.17021 21C7.77065 20.999 8.3603 20.8404 8.88021 20.54L18.5402 15C19.0593 14.6996 19.4902 14.268 19.7898 13.7485C20.0894 13.2289 20.2471 12.6397 20.2471 12.04C20.2471 11.4403 20.0894 10.8511 19.7898 10.3316C19.4902 9.81206 19.0593 9.38044 18.5402 9.08003V9.00003Z" fill="currentColor"/>
+                                    </svg>                                                                   
+                                  </div>
+                                  <span>1:32</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <p class="text-black typo-small medium">
+                                too late to a given market, or targeting a market that's too saturated with similar solutions
+                                —
+                                and you don't want to run the risk of wasting time and resources on launching an unprofitable
+                                product.</p>
+                            </div>
+                          </div>
+                          <!-- 대댓글 -->
+                          <div class="flex flex-row">
+                            <div class="flex flex-col pr-2 text-gray-600 sm">
+                              <div class="icon-container">
+                                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M19.6095 16C19.5552 15.8785 19.4808 15.7669 19.3895 15.67L14.7595 11C14.5682 10.8362 14.3222 10.7506 14.0705 10.7603C13.8188 10.77 13.5801 10.8743 13.402 11.0524C13.2239 11.2305 13.1195 11.4693 13.1098 11.7209C13.1001 11.9726 13.1857 12.2187 13.3495 12.41L16.2695 15.33H9.26953C8.47388 15.33 7.71082 15.0139 7.14821 14.4513C6.5856 13.8887 6.26953 13.1256 6.26953 12.33V3C6.26953 2.73478 6.16417 2.48043 5.97664 2.29289C5.7891 2.10536 5.53475 2 5.26953 2C5.00431 2 4.74996 2.10536 4.56242 2.29289C4.37489 2.48043 4.26953 2.73478 4.26953 3V12.37C4.26953 13.6961 4.79632 14.9679 5.734 15.9055C6.67168 16.8432 7.94345 17.37 9.26953 17.37H16.2695L13.3495 20.29C13.2558 20.383 13.1814 20.4936 13.1306 20.6154C13.0799 20.7373 13.0537 20.868 13.0537 21C13.0537 21.132 13.0799 21.2627 13.1306 21.3846C13.1814 21.5064 13.2558 21.617 13.3495 21.71C13.443 21.8027 13.5538 21.876 13.6756 21.9258C13.7975 21.9755 13.9279 22.0008 14.0595 22C14.3219 21.9989 14.5733 21.8947 14.7595 21.71L19.3895 17.08C19.4842 16.9858 19.559 16.8736 19.6095 16.75C19.7068 16.5095 19.7068 16.2405 19.6095 16V16Z" fill="currentColor"/>
+                                  </svg>                         
+                              </div>
+                            </div>
+                            <div class="flex flex-col">
+                              <div class="flex flex-row items-end pb-3 ">
+                                <div class="w-6 h-6 mr-2 border rounded-full flex-row-center border-primary typo-small bold text-primary" style="display:none;">1</div>
+                                <div class="flex flex-row items-end space-x-2">
+                                  <span class="text-black typo-small bold">Issac Lee</span>
+                                  <p class="text-gray-500 typo-tiny">4 mins</p>
+                                  <!-- <div class="px-3 py-1 space-x-1.5 select-none cursor-pointer text-white rounded-full sm flex-row-center bg-primary typo-small">
+                                    <div class="icon-container">
+                                      <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.5402 9.00003L8.88021 3.46003C8.3575 3.15819 7.76421 3.00006 7.16061 3.00172C6.557 3.00338 5.96459 3.16476 5.44354 3.46947C4.92249 3.77417 4.49137 4.21135 4.19396 4.7366C3.89655 5.26185 3.74345 5.85646 3.75021 6.46003V17.58C3.75021 18.4871 4.11053 19.357 4.75191 19.9983C5.39328 20.6397 6.26317 21 7.17021 21C7.77065 20.999 8.3603 20.8404 8.88021 20.54L18.5402 15C19.0593 14.6996 19.4902 14.268 19.7898 13.7485C20.0894 13.2289 20.2471 12.6397 20.2471 12.04C20.2471 11.4403 20.0894 10.8511 19.7898 10.3316C19.4902 9.81206 19.0593 9.38044 18.5402 9.08003V9.00003Z" fill="currentColor"/>
+                                      </svg>                                                                   
+                                    </div>
+                                    <span>1:32</span>
+                                  </div> -->
+                                </div>
+                              </div>
+                              <div>
+                                <p class="text-black typo-small medium">
+                                  too late to a given market, or targeting a market that's too saturated with similar solutions
+                                  —
+                                  and you don't want to run the risk of wasting time and resources on launching an unprofitable
+                                  product.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- 댓글 -->
+                          <div class="flex flex-col">
+                            <div class="flex flex-row items-end pb-3 ">
+                              <div class="w-6 h-6 mr-2 border rounded-full flex-row-center border-primary typo-small bold text-primary">2</div>
+                              <div class="flex flex-row items-end space-x-2">
+                                <span class="text-black typo-small bold">Issac Lee</span>
+                                <p class="text-gray-500 typo-tiny">4 mins</p>
+                                <div class="px-3 py-1 space-x-1.5 select-none cursor-pointer text-white rounded-full sm flex-row-center bg-primary typo-small">
+                                  <div class="icon-container">
+                                    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18.5402 9.00003L8.88021 3.46003C8.3575 3.15819 7.76421 3.00006 7.16061 3.00172C6.557 3.00338 5.96459 3.16476 5.44354 3.46947C4.92249 3.77417 4.49137 4.21135 4.19396 4.7366C3.89655 5.26185 3.74345 5.85646 3.75021 6.46003V17.58C3.75021 18.4871 4.11053 19.357 4.75191 19.9983C5.39328 20.6397 6.26317 21 7.17021 21C7.77065 20.999 8.3603 20.8404 8.88021 20.54L18.5402 15C19.0593 14.6996 19.4902 14.268 19.7898 13.7485C20.0894 13.2289 20.2471 12.6397 20.2471 12.04C20.2471 11.4403 20.0894 10.8511 19.7898 10.3316C19.4902 9.81206 19.0593 9.38044 18.5402 9.08003V9.00003Z" fill="currentColor"/>
+                                    </svg>                                                                   
+                                  </div>
+                                  <span>1:32</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <p class="text-black typo-small medium">
+                                too late to a given market, or targeting a market that's too saturated with similar solutions
+                                —
+                                and you don't want to run the risk of wasting time and resources on launching an unprofitable
+                                product.</p>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="pt-3 text-gray-500 typo-tiny">
+                          3 more comments
                         </div>
                       </div>
-                      <div>
-                        <p class="text-black typo-small medium">
-                          too late to a given market, or targeting a market that's too saturated with similar solutions
-                          —
-                          and you don't want to run the risk of wasting time and resources on launching an unprofitable
-                          product.</p>
-
-                      </div>
                     </div>
+                    <div class="typo-small text-primary bold">Add Comment</div>
                   </div>
                 </div>
 
@@ -355,7 +451,7 @@
                 </div>
               </div>
 
-              <!-- section -->
+              <!-- 게시글 -->
               <div class="flex flex-row w-full">
                 <div class="flex flex-row justify-end flex-grow-0 flex-shrink-0 w-20 pt-2 pr-4">
                   <!-- avatar -->
@@ -367,18 +463,32 @@
                 </div>
 
                 <div class="flex flex-col px-6 py-6 bg-white border border-gray-300 flex-grow-2 rounded-xl">
-                  <div class="flex flex-row items-end pb-3 space-x-2">
-                    <span class="text-black typo-small bold">Issac Lee</span>
-                    <p class="text-gray-500 typo-tiny">4 mins</p>
+                  <div class="flex flex-row items-center pb-3 place-content-between">
+                    <div class="flex flex-row items-end space-x-2">
+                      <span class="text-black typo-small bold">Issac Lee</span>
+                      <p class="text-gray-500 typo-tiny">4 mins</p>
+                    </div>
+
+                    <div class="btn icon ghost sm">
+                      <div class="icon-container">
+                        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 10C11.6044 10 11.2178 10.1173 10.8889 10.3371C10.56 10.5568 10.3036 10.8692 10.1522 11.2346C10.0009 11.6001 9.96126 12.0022 10.0384 12.3902C10.1156 12.7781 10.3061 13.1345 10.5858 13.4142C10.8655 13.6939 11.2219 13.8844 11.6098 13.9616C11.9978 14.0387 12.3999 13.9991 12.7654 13.8478C13.1308 13.6964 13.4432 13.44 13.6629 13.1111C13.8827 12.7822 14 12.3956 14 12C14 11.4696 13.7893 10.9609 13.4142 10.5858C13.0391 10.2107 12.5304 10 12 10ZM5 10C4.60444 10 4.21776 10.1173 3.88886 10.3371C3.55996 10.5568 3.30362 10.8692 3.15224 11.2346C3.00087 11.6001 2.96126 12.0022 3.03843 12.3902C3.1156 12.7781 3.30608 13.1345 3.58579 13.4142C3.86549 13.6939 4.22186 13.8844 4.60982 13.9616C4.99778 14.0387 5.39992 13.9991 5.76537 13.8478C6.13082 13.6964 6.44318 13.44 6.66294 13.1111C6.8827 12.7822 7 12.3956 7 12C7 11.4696 6.78929 10.9609 6.41421 10.5858C6.03914 10.2107 5.53043 10 5 10ZM19 10C18.6044 10 18.2178 10.1173 17.8889 10.3371C17.56 10.5568 17.3036 10.8692 17.1522 11.2346C17.0009 11.6001 16.9613 12.0022 17.0384 12.3902C17.1156 12.7781 17.3061 13.1345 17.5858 13.4142C17.8655 13.6939 18.2219 13.8844 18.6098 13.9616C18.9978 14.0387 19.3999 13.9991 19.7654 13.8478C20.1308 13.6964 20.4432 13.44 20.6629 13.1111C20.8827 12.7822 21 12.3956 21 12C21 11.4696 20.7893 10.9609 20.4142 10.5858C20.0391 10.2107 19.5304 10 19 10Z" fill="currentColor"/>
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                  <div class="flex flex-col space-y-4">
-                    <p class="text-black typo-small medium">
-                      Without proper planning, it’s impossible to know if you’re chasing the wrong audience, are too
-                      early
-                      or too late to a given market, or targeting a market that's too saturated with similar solutions —
-                      and
-                      you don't want to run the risk of wasting time and resources on launching an unprofitable product.
-                    </p>
+                  
+                  <div class="flex flex-col space-y-5">
+
+                    <div class="flex flex-col space-y-3">
+                      <img src="../img/card-img.png" alt="" class="w-full h-52">
+                      <div class="flex flex-col space-y-3 text-gray-600 typo-tiny">
+                        you don't want to run the risk of wasting time and resources on launching an chasing the wrong
+                        audience, are too early or too late to a given market.
+                      </div>
+                    </div>
+                    
+                    <div class="typo-small text-primary bold">Add Comment</div>
                   </div>
                 </div>
 
@@ -386,22 +496,14 @@
                   <div class="mins">
                     <p class="hidden text-gray-600 typo-tiny">.</p>
                   </div>
-                  <!-- <div class="btn noti icon">
-                    <div class="icon-container">
-                      <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M13 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H13C13.2652 13 13.5196 12.8946 13.7071 12.7071C13.8946 12.5196 14 12.2652 14 12C14 11.7348 13.8946 11.4804 13.7071 11.2929C13.5196 11.1054 13.2652 11 13 11ZM17 7H7C6.73478 7 6.48043 7.10536 6.29289 7.29289C6.10536 7.48043 6 7.73478 6 8C6 8.26522 6.10536 8.51957 6.29289 8.70711C6.48043 8.89464 6.73478 9 7 9H17C17.2652 9 17.5196 8.89464 17.7071 8.70711C17.8946 8.51957 18 8.26522 18 8C18 7.73478 17.8946 7.48043 17.7071 7.29289C17.5196 7.10536 17.2652 7 17 7ZM19 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V15C2 15.7956 2.31607 16.5587 2.87868 17.1213C3.44129 17.6839 4.20435 18 5 18H16.59L20.29 21.71C20.3834 21.8027 20.4943 21.876 20.6161 21.9258C20.7379 21.9755 20.8684 22.0008 21 22C21.1312 22.0034 21.2613 21.976 21.38 21.92C21.5626 21.845 21.7189 21.7176 21.8293 21.5539C21.9396 21.3901 21.999 21.1974 22 21V5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2ZM20 18.59L17.71 16.29C17.6166 16.1973 17.5057 16.124 17.3839 16.0742C17.2621 16.0245 17.1316 15.9992 17 16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H19C19.2652 4 19.5196 4.10536 19.7071 4.29289C19.8946 4.48043 20 4.73478 20 5V18.59Z"
-                          fill="currentColor" />
-                      </svg>
-                    </div>
-                  </div> -->
                 </div>
               </div>
 
-              <!-- section -->
+
+              <!-- 게시글 -->
               <div class="flex flex-row w-full">
-                <div class="flex flex-row justify-end flex-grow-0 flex-shrink-0 w-20">
+                <div class="flex flex-row justify-end flex-grow-0 flex-shrink-0 w-20 pt-2 pr-4">
+                  <!-- avatar -->
                   <div class="avatar">
                     <div>
                       <img src="../img/choonsik.jpg" alt="">
@@ -409,61 +511,41 @@
                   </div>
                 </div>
 
-                <div class="flex flex-col px-6 flex-grow-2">
-                  <p class="text-black typo-small medium">
-                    Without proper planning, it’s impossible to know if you’re chasing the wrong audience, are too early
-                    or too late to a given market, or targeting a market that's too saturated with similar solutions —
-                    and
-                    you don't want to run the risk of wasting time and resources on launching an unprofitable product.
-                  </p>
+                <div class="flex flex-col px-6 py-6 bg-white border border-gray-300 flex-grow-2 rounded-xl">
+                  <div class="flex flex-row items-center pb-3 place-content-between">
+                    <div class="flex flex-row items-end space-x-2">
+                      <span class="text-black typo-small bold">Issac Lee</span>
+                      <p class="text-gray-500 typo-tiny">4 mins</p>
+                    </div>
+
+                    <div class="btn icon ghost sm">
+                      <div class="icon-container">
+                        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 10C11.6044 10 11.2178 10.1173 10.8889 10.3371C10.56 10.5568 10.3036 10.8692 10.1522 11.2346C10.0009 11.6001 9.96126 12.0022 10.0384 12.3902C10.1156 12.7781 10.3061 13.1345 10.5858 13.4142C10.8655 13.6939 11.2219 13.8844 11.6098 13.9616C11.9978 14.0387 12.3999 13.9991 12.7654 13.8478C13.1308 13.6964 13.4432 13.44 13.6629 13.1111C13.8827 12.7822 14 12.3956 14 12C14 11.4696 13.7893 10.9609 13.4142 10.5858C13.0391 10.2107 12.5304 10 12 10ZM5 10C4.60444 10 4.21776 10.1173 3.88886 10.3371C3.55996 10.5568 3.30362 10.8692 3.15224 11.2346C3.00087 11.6001 2.96126 12.0022 3.03843 12.3902C3.1156 12.7781 3.30608 13.1345 3.58579 13.4142C3.86549 13.6939 4.22186 13.8844 4.60982 13.9616C4.99778 14.0387 5.39992 13.9991 5.76537 13.8478C6.13082 13.6964 6.44318 13.44 6.66294 13.1111C6.8827 12.7822 7 12.3956 7 12C7 11.4696 6.78929 10.9609 6.41421 10.5858C6.03914 10.2107 5.53043 10 5 10ZM19 10C18.6044 10 18.2178 10.1173 17.8889 10.3371C17.56 10.5568 17.3036 10.8692 17.1522 11.2346C17.0009 11.6001 16.9613 12.0022 17.0384 12.3902C17.1156 12.7781 17.3061 13.1345 17.5858 13.4142C17.8655 13.6939 18.2219 13.8844 18.6098 13.9616C18.9978 14.0387 19.3999 13.9991 19.7654 13.8478C20.1308 13.6964 20.4432 13.44 20.6629 13.1111C20.8827 12.7822 21 12.3956 21 12C21 11.4696 20.7893 10.9609 20.4142 10.5858C20.0391 10.2107 19.5304 10 19 10Z" fill="currentColor"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex flex-col space-y-5">
+
+                    <div class="flex flex-col space-y-3">
+                      <div class="flex flex-col space-y-3 text-black typo-small">
+                        Without proper planning, it’s impossible to know if you’re chasing the wrong audience, are too early or too late to a given market, or targeting a market that's too saturated with similar solutions — and you don't want to run the risk of wasting time and resources on launching an unprofitable product.
+                      </div>
+                    </div>
+                    
+                    <div class="typo-small text-primary bold">Add Comment</div>
+                  </div>
                 </div>
 
-                <div class="flex flex-col flex-grow-0 flex-shrink-0 w-20 place-content-between">
+                <div class="flex flex-col flex-grow-0 flex-shrink-0 w-20 pb-2 pl-4 place-content-between">
                   <div class="mins">
-                    <p class="text-gray-600 typo-tiny">4mins</p>
+                    <p class="hidden text-gray-600 typo-tiny">.</p>
                   </div>
-                  <!-- <div class="btn icon">
-                    <div class="icon-container">
-                      <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M13 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H13C13.2652 13 13.5196 12.8946 13.7071 12.7071C13.8946 12.5196 14 12.2652 14 12C14 11.7348 13.8946 11.4804 13.7071 11.2929C13.5196 11.1054 13.2652 11 13 11ZM17 7H7C6.73478 7 6.48043 7.10536 6.29289 7.29289C6.10536 7.48043 6 7.73478 6 8C6 8.26522 6.10536 8.51957 6.29289 8.70711C6.48043 8.89464 6.73478 9 7 9H17C17.2652 9 17.5196 8.89464 17.7071 8.70711C17.8946 8.51957 18 8.26522 18 8C18 7.73478 17.8946 7.48043 17.7071 7.29289C17.5196 7.10536 17.2652 7 17 7ZM19 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V15C2 15.7956 2.31607 16.5587 2.87868 17.1213C3.44129 17.6839 4.20435 18 5 18H16.59L20.29 21.71C20.3834 21.8027 20.4943 21.876 20.6161 21.9258C20.7379 21.9755 20.8684 22.0008 21 22C21.1312 22.0034 21.2613 21.976 21.38 21.92C21.5626 21.845 21.7189 21.7176 21.8293 21.5539C21.9396 21.3901 21.999 21.1974 22 21V5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2ZM20 18.59L17.71 16.29C17.6166 16.1973 17.5057 16.124 17.3839 16.0742C17.2621 16.0245 17.1316 15.9992 17 16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H19C19.2652 4 19.5196 4.10536 19.7071 4.29289C19.8946 4.48043 20 4.73478 20 5V18.59Z"
-                          fill="currentColor" />
-                      </svg>
-                    </div>
-                  </div> -->
                 </div>
               </div>
-              <!-- section -->
-              <div class="flex flex-row w-full">
-                <div class="flex flex-row justify-end flex-grow-0 flex-shrink-0 w-20">
-                  <div class="avatar">
-                    <div>
-                      <img src="../img/choonsik.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
 
-                <div class="flex flex-col px-6 flex-grow-2">
-                  <img src="../img/img01.png" alt="" class="w-full">
-                </div>
-
-                <div class="flex flex-col flex-grow-0 flex-shrink-0 w-20 place-content-between">
-                  <div class="mins">
-                    <p class="text-gray-600 typo-tiny">4mins</p>
-                  </div>
-                  <!-- <div class="btn icon">
-                    <div class="icon-container">
-                      <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M13 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H13C13.2652 13 13.5196 12.8946 13.7071 12.7071C13.8946 12.5196 14 12.2652 14 12C14 11.7348 13.8946 11.4804 13.7071 11.2929C13.5196 11.1054 13.2652 11 13 11ZM17 7H7C6.73478 7 6.48043 7.10536 6.29289 7.29289C6.10536 7.48043 6 7.73478 6 8C6 8.26522 6.10536 8.51957 6.29289 8.70711C6.48043 8.89464 6.73478 9 7 9H17C17.2652 9 17.5196 8.89464 17.7071 8.70711C17.8946 8.51957 18 8.26522 18 8C18 7.73478 17.8946 7.48043 17.7071 7.29289C17.5196 7.10536 17.2652 7 17 7ZM19 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V15C2 15.7956 2.31607 16.5587 2.87868 17.1213C3.44129 17.6839 4.20435 18 5 18H16.59L20.29 21.71C20.3834 21.8027 20.4943 21.876 20.6161 21.9258C20.7379 21.9755 20.8684 22.0008 21 22C21.1312 22.0034 21.2613 21.976 21.38 21.92C21.5626 21.845 21.7189 21.7176 21.8293 21.5539C21.9396 21.3901 21.999 21.1974 22 21V5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2ZM20 18.59L17.71 16.29C17.6166 16.1973 17.5057 16.124 17.3839 16.0742C17.2621 16.0245 17.1316 15.9992 17 16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H19C19.2652 4 19.5196 4.10536 19.7071 4.29289C19.8946 4.48043 20 4.73478 20 5V18.59Z"
-                          fill="currentColor" />
-                      </svg>
-                    </div>
-                  </div> -->
-                </div>
-              </div>
 
             </div>
 
