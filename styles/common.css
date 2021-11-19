@@ -295,10 +295,10 @@
   box-shadow: none;
 }
 .dropdown.inner .dropdown-item-h{
-  @apply py-2 hover:bg-complimentary;
+  @apply py-2 hover:bg-blue-100 ;
 }
 .dropdown.inner .dropdown-item-title-text{
-  @apply  typo-small;
+  @apply  w-full h-full text-gray-500 typo-small hover:text-primary;
 }
 
 .dropdown-item-h{
