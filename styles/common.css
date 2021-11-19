@@ -190,7 +190,7 @@
   @apply bg-gray-200;
 }
 .nav-section{
-  @apply px-4 mt-4 mb-1 text-gray-700 typo-tiny;
+  @apply px-4 mt-4 mb-1 text-gray-700 select-none typo-tiny;
 }
 .nav-footer{
   @apply flex items-center h-16 px-5 text-black cursor-pointer select-none typo-body;
@@ -239,7 +239,7 @@
 
 
 .modal-body{
-  @apply flex flex-col w-full px-16 ;
+  @apply flex flex-col w-full px-16 select-none ;
   
 }
 .modal.sm > .modal-body{
@@ -402,6 +402,9 @@
 .btn {
   @apply box-border flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-2 text-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small ;
 }
+.btn.round {
+  @apply rounded-full;
+}
 .btn.toggle{
   @apply justify-start;
 }
@@ -425,6 +428,12 @@
 }
 .btn.disabled{
   @apply text-gray-400 bg-gray-50;
+}
+.btn.disabled:hover{
+  @apply hover:bg-gray-50;
+}
+.btn.disabled:active{
+  @apply hover:bg-gray-50;
 }
 .btn.lg{
   @apply h-12 px-6 space-x-2 typo-subtitle bold;
@@ -469,6 +478,12 @@
 .btn.ghost.disabled{
   @apply text-gray-300;
 }
+.btn.ghost.disabled:hover{
+  background-color: transparent;
+}
+.btn.ghost.disabled:active{
+  background-color: transparent;
+}
 /* .btn.ghost:hover{
   @apply bg-gray-100;
 }
@@ -507,10 +522,10 @@
   @apply relative flex flex-row items-center w-full h-10 px-2 space-x-2 overflow-hidden text-gray-400 border border-gray-300 rounded-lg cursor-pointer whitespace-nowrap focus:text-black typo-small bg-gray-50;
 }
 .input.comment{
-  @apply flex-col h-24 overflow-y-auto place-content-between;
+  @apply flex-col h-40 overflow-y-auto place-content-between;
 }
 .input.comment > .input-body{
-  @apply pt-3 whitespace-normal;
+  @apply w-32 h-40 pt-3 break-all whitespace-normal bg-negative;
 }
 .input-body{
   @apply flex flex-row items-center w-full py-1 bg-gray-50 whitespace-nowrap;
@@ -522,10 +537,10 @@
   @apply flex flex-col w-full space-y-1 overflow-hidden;
 }
 .input-label{
-  @apply flex-shrink-0 mb-1 text-gray-700 typo-small whitespace-nowrap;
+  @apply flex-shrink-0 mb-1 text-gray-700 select-none typo-small whitespace-nowrap;
 }
 .input-negative{
-  @apply text-right text-negative typo-tiny whitespace-nowrap;
+  @apply text-right select-none text-negative typo-tiny whitespace-nowrap;
 }
 /* .input-form .input{
   @apply flex-grow-0 flex-shrink-0;
@@ -705,12 +720,12 @@ label:active:after {
 /* --------------------------------------------------------------------------------------------------------- */
 /* ---                                                                                                   --- */
 /* ---                                         avatar                                                    --- */
-/* ---                                                                                                   --- */
+/* ---                         https://rive.app/login/?redirect=https://editor.rive.app                                                                          --- */
 /* --------------------------------------------------------------------------------------------------------- */
 
 
 .avatar {
-  @apply inline-block w-8 h-8 overflow-hidden;
+  @apply inline-block w-8 h-8 overflow-hidden select-none;
 }
 
 .avatar-group .avatar:not(:first-child) {
@@ -720,6 +735,7 @@ label:active:after {
 }
 
 .avatar img {
+  @apply select-none;
   width: 100%;
   display: block;
   border-radius: 50%;
