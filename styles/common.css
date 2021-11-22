@@ -317,10 +317,10 @@
 }
 
 .dropdown-item-title-text{
-  @apply text-gray-800 typo-body whitespace-nowrap;
+  @apply text-gray-800 typo-small whitespace-nowrap;
 }
 .dropdown-item-subtext{
-  @apply text-gray-500 typo-small whitespace-nowrap medium;
+  @apply text-gray-500 typo-tiny whitespace-nowrap medium;
 }
 .dropdown-divider{
   @apply w-full mx-auto bg-gray-300;
@@ -330,7 +330,7 @@
   @apply flex flex-row flex-grow-0 w-full px-5 py-5 space-x-2 place-content-between;
 }
 .dropdown-item-profile{
-  @apply text-gray-700 typo-small medium;
+  @apply text-gray-700 typo-tiny medium;
 }
 .dropdown-footer{
   @apply  flex flex-row items-center px-5 py-4 cursor-pointer select-none place-content-between;
