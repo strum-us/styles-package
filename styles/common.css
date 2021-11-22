@@ -27,7 +27,6 @@
 }
 
 
-
 .hover-container .hover-view {
   visibility: hidden;
 }
@@ -240,8 +239,12 @@
 
 .modal-body{
   @apply flex flex-col w-full px-16 select-none ;
-  
 }
+
+.modal-body-text{
+  @apply text-gray-500 typo-small;
+}
+
 .modal.sm > .modal-body{
   @apply px-0 bg-white;
 }
