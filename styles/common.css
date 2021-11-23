@@ -846,3 +846,20 @@ label:active:after {
     stroke-dashoffset: 282.6;
   }
 }
+
+
+
+
+/* ----------- attachment ----------- */
+
+.attachment{
+  @apply relative;
+}
+.attachment:hover:after{
+  content: 'x';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  color: #fff;
+}
