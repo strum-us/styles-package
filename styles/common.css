@@ -36,6 +36,11 @@
 } 
 
 
+.drag-app {
+  -webkit-app-region: drag;
+}
+
+
 /* scroll bar ----------------------------------------------------------- */
 .overflow-y-auto::-webkit-scrollbar {
   background: transparent;
