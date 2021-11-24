@@ -859,10 +859,17 @@ label:active:after {
 }
 
 .attachment .close{
-  @apply absolute w-5 h-5 text-white rounded-full select-none bg-negative flex-row-center typo-tiny;
+  @apply absolute w-5 h-5 text-white rounded-full bg-negative flex-row-center typo-tiny;
   top: -6px;
   right: -6px;
+  display:none;
 }
+
+.attachment:hover .close{
+  @apply flex ;
+}
+
+
 
 
 /* .attachment:after{
