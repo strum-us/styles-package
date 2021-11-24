@@ -36,6 +36,8 @@
 } 
 
 
+
+
 .drag-app {
   -webkit-app-region: drag;
 }
@@ -855,11 +857,19 @@ label:active:after {
 .attachment{
   @apply relative;
 }
-.attachment:hover:after{
+
+.attachment .close{
+  @apply absolute w-5 h-5 text-white rounded-full select-none bg-negative flex-row-center typo-tiny;
+  top: -6px;
+  right: -6px;
+}
+
+
+/* .attachment:after{
   content: 'x';
   position: absolute;
   width: 10px;
   height: 10px;
   background: red;
   color: #fff;
-}
+} */
