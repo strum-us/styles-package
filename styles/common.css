@@ -154,6 +154,10 @@
   @apply w-4;
 }
 
+.logo .icon-container{
+  @apply w-12;
+}
+
 .logo.icon-container{
   @apply w-12;
 }
@@ -176,11 +180,11 @@
 /* ---                                                                                                   --- */
 /* --------------------------------------------------------------------------------------------------------- */
 .divider-h{
-  @apply w-full bg-gray-300;
+  @apply flex-shrink-0 w-full bg-gray-300;
   height: 1px;
 }
 .divider-v{
-  @apply h-full bg-gray-300;
+  @apply flex-shrink-0 h-full bg-gray-300;
   width: 1px;
 }
 
