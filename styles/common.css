@@ -43,7 +43,22 @@
 }
 
 
+
+/* workflow 세로선 처리 ----------------------------------------------------------- */
+
+.workflow-item-container:first-child .workflow-item-line-top {
+  visibility: hidden;
+}
+
+.workflow-item-container:last-child .workflow-item-line-top {
+  visibility: hidden;
+}
+
+
+
+
 /* scroll bar ----------------------------------------------------------- */
+
 .overflow-y-auto::-webkit-scrollbar {
   background: transparent;
   width: 8px;
@@ -611,7 +626,7 @@
  */
 
 
- div[contenteditable=true] {
+div[contenteditable=true] {
   @apply text-gray-400;
 }
 div[contenteditable=true]:focus {
@@ -859,14 +874,15 @@ label:active:after {
 }
 
 .attachment .close{
-  @apply absolute w-5 h-5 text-white rounded-full bg-negative flex-row-center typo-tiny;
+  @apply absolute w-5 h-5 text-white rounded-full select-none bg-negative flex-row-center typo-tiny;
   top: -6px;
   right: -6px;
   display:none;
 }
 
 .attachment:hover .close{
-  @apply flex ;
+  /* @apply flex ; */
+  display: flex !important;
 }
 
 
@@ -879,4 +895,60 @@ label:active:after {
   height: 10px;
   background: red;
   color: #fff;
+} */
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* ---                                                                                                   --- */
+/* ---                                            badge                                                  --- */
+/* ---                                                                                                   --- */
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* 
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.25rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: .563rem;
+  padding-right: .563rem;
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--n)/var(--tw-bg-opacity,1));
+  --tw-border-opacity: 1;
+  border-color: hsla(var(--n)/var(--tw-border-opacity,1));
+  border-width: 1px;
+  --tw-text-opacity: 1;
+  color: hsla(var(--nc)/var(--tw-text-opacity,1));
+  border-radius: var(--rounded-badge,1.9rem);
+}
+
+
+.badge-sm {
+  height: 1rem;
+  font-size: .75rem;
+  line-height: 1rem;
+  padding-left: .438rem;
+  padding-right: .438rem;
+}
+
+.badge-md {
+  height: 1.25rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  padding-left: .563rem;
+  padding-right: .563rem;
+}
+
+.badge-lg {
+  height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: .688rem;
+  padding-right: .688rem;
 } */
