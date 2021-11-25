@@ -50,7 +50,7 @@
   visibility: hidden;
 }
 
-.workflow-item-container:last-child .workflow-item-line-top {
+.workflow-item-container:last-child .workflow-item-line-bottom {
   visibility: hidden;
 }
 
