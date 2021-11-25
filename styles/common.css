@@ -496,10 +496,10 @@
   @apply text-white border-0 bg-primary;
 }
 .btn.solid:hover{
-  @apply bg-blue-700;
+  @apply bg-primary-hover;
 }
 .btn.solid:active{
-  @apply bg-blue-800;
+  @apply bg-primary-active;
 }
 .btn.ghost{
   @apply text-gray-500 bg-opacity-0 border-0 hover:bg-gray-100 active:bg-gray-200;
