@@ -956,3 +956,31 @@ label:active:after {
   padding-left: .688rem;
   padding-right: .688rem;
 } */
+
+
+
+/*------------- steps -------------*/
+
+.steps{
+  @apply space-x-24 flex-row-center;
+}
+.step{
+  @apply relative w-10 h-10 bg-gray-100 rounded-full bold text-primary typo-small flex-row-center;
+}
+.step.solid{
+  @apply text-white bg-primary;
+}
+.step:before{
+  content: '';
+  @apply absolute h-1 bg-gray-100 ;
+  width: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -96px;
+}
+.step.solid:before{
+  @apply bg-primary;
+}
+.step:first-child:before{
+  display: none;
+}
