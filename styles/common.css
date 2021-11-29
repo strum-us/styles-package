@@ -300,7 +300,7 @@
   @apply px-0 bg-white;
 }
 .modal.lg .modal-body{
-  @apply h-full px-10 overflow-y-auto bg-white;
+  @apply h-full px-10 pb-10 overflow-y-auto bg-white;
 }
 
 .modal-body-header{
@@ -355,7 +355,7 @@
   @apply flex justify-end px-16 mt-10 space-x-3;
 }
 .modal.lg .modal-body-footer{
-  @apply flex justify-end px-16 mt-10 space-x-3;
+  @apply flex justify-end px-16 space-x-3;
 }
 .modal.sm .modal-body-footer{
   @apply px-10;
