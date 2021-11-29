@@ -397,9 +397,9 @@
   @apply w-full;
 }
 .card-body{
-  @apply box-border flex flex-col w-full h-full py-5 mx-6 place-content-between;
+  @apply flex flex-col w-full h-full px-6 py-5 place-content-between;
 }
-.card-body-title{
+/* .card-body-title{
   @apply text-black typo-body bold;
 }
 .card-body-text{
@@ -407,7 +407,7 @@
 }
 .card-body-text.sm{
   @apply text-gray-600 typo-tiny;
-}
+} */
 
 /* .card-image{
   background: url(../img/card-img.png) no-repeat center center;
@@ -769,6 +769,16 @@ label:active:after {
       mask:radial-gradient(circle 19px at -4px 50%,transparent 99%,#fff 100%);
 }
 
+.avatar.sm {
+  @apply inline-block w-6 h-6 overflow-hidden select-none;
+}
+
+.avatar-group .avatar.sm:not(:first-child) {
+  margin-left: -12px;
+  -webkit-mask:radial-gradient(circle 19px at -4px 50%,transparent 99%,#fff 100%);
+      mask:radial-gradient(circle 19px at -4px 50%,transparent 99%,#fff 100%);
+}
+
 .avatar img {
   @apply select-none;
   width: 100%;
@@ -891,17 +901,6 @@ label:active:after {
 
 
 
-
-/* .attachment:after{
-  content: 'x';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: red;
-  color: #fff;
-} */
-
-
 /* --------------------------------------------------------------------------------------------------------- */
 /* ---                                                                                                   --- */
 /* ---                                            badge                                                  --- */
@@ -984,3 +983,5 @@ label:active:after {
 .step:first-child:before{
   display: none;
 }
+
+
