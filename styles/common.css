@@ -248,7 +248,7 @@
 /* ------ modal ------ */
 
 .modal{
-  @apply flex flex-row overflow-hidden bg-white border shadow-lg rounded-xl;
+  @apply relative flex flex-row overflow-hidden bg-white border shadow-lg rounded-xl;
   min-width: 800px;
   max-width: 1440px;
 
@@ -284,6 +284,7 @@
 }
 
 
+
 .modal-body{
   @apply flex flex-col w-full px-16 select-none ;
 }
@@ -298,8 +299,8 @@
 .modal.md > .modal-body{
   @apply px-0 bg-white;
 }
-.modal.lg > .modal-body{
-  @apply px-10 overflow-y-auto bg-white;
+.modal.lg .modal-body{
+  @apply h-full px-10 overflow-y-auto bg-white;
 }
 
 .modal-body-header{
@@ -344,7 +345,7 @@
   @apply px-10;
 }
 .modal.lg .modal-body-subtitle{
-  @apply px-10;
+  @apply px-0;
 }
 
 .modal.sm .modal-body-footer{
