@@ -64,6 +64,12 @@ module.exports = {
         dark: '#2a2b2f',
         extreme: '#232529',
       },
+      dim: {
+        light: colors.gray[100],
+        border: colors.gray[200],
+        sub: colors.gray[400],
+        DEFAULT: colors.gray[500],
+      },
       complimentary: '#eeeeff',
     },
   },
