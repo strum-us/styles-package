@@ -56,7 +56,7 @@ module.exports = {
       //   DEFAULT: colors.gray[400],
       //   dark: colors.gray[500],
       // },
-      gray: colors.gray,
+      gray: colors.coolGray,
       blue: colors.blue,
       red: colors.red,
       green: colors.green,

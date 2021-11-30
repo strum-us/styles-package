@@ -564,7 +564,13 @@
   @apply bg-primary-active;
 }
 .btn.ghost{
-  @apply text-gray-500 bg-opacity-0 border-0 hover:bg-gray-100 active:bg-gray-200;
+  @apply text-gray-500 bg-opacity-0 border-0 ;
+}
+.btn.ghost:not(.disabled):hover{
+  background: rgb(236, 238, 241);
+}
+.btn.ghost:not(.disabled):active{
+  background: rgb(215, 218, 224);
 }
 .btn.ghost.disabled{
   @apply text-gray-300;
