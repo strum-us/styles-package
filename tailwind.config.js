@@ -40,6 +40,7 @@ module.exports = {
         DEFAULT: '#4589EF',
         hover:'#4574EF',
         active: '#4668E0',
+        disabled:'#A0B2F0',
         dark: '#3B5FE0',
       },
       negative: {

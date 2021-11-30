@@ -493,6 +493,9 @@
 .btn {
   @apply box-border flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-2 text-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small ;
 }
+.btn.disabled{
+  @apply text-gray-400 bg-gray-50;
+}
 .btn.round {
   @apply rounded-full;
 }
@@ -502,10 +505,10 @@
 .btn.toggle span{
   @apply w-full;
 }
-.btn:hover{
+.btn:not(.disabled):hover{
   @apply bg-gray-200;
 }
-.btn:active{
+.btn:not(.disabled):active{
   @apply bg-gray-300;
 }
 .btn.icon{
@@ -517,15 +520,8 @@
 .btn.sm.icon{
   @apply w-8 h-8;
 }
-.btn.disabled{
-  @apply text-gray-400 bg-gray-50;
-}
-.btn.disabled:hover{
-  @apply hover:bg-gray-50;
-}
-.btn.disabled:active{
-  @apply hover:bg-gray-50;
-}
+
+
 .btn.lg{
   @apply h-12 px-6 space-x-2 typo-subtitle bold;
 }
@@ -535,36 +531,46 @@
 
 .btn.wide {
   @apply flex-grow flex-shrink-0 space-x-1 max-w-none;
+
 }
-.btn.negative:hover{
+.btn.negative.disabled{
+  @apply text-gray-400 bg-gray-50; 
+}
+.btn.negative:not(.disabled):hover{
   @apply bg-red-100 border-negative text-negative; 
 }
-.btn.negative:active{
+.btn.negative:not(.disabled):active{
   @apply bg-red-200;
 }
 .btn.primary{
   @apply bg-blue-100 border-primary text-primary;
 }
 .btn.primary.disabled{
-  @apply text-blue-400 bg-blue-100 border-blue-400;
+  @apply text-primary-disabled bg-complimentary border-primary-disabled;
 }
-.btn.primary:hover{
+.btn.primary:not(.disabled):hover{
   @apply bg-blue-200 border-primary text-primary;
 }
-.btn.primary:active{
+.btn.primary:not(.disabled):active{
   @apply bg-blue-300;
 }
 .btn.solid{
   @apply text-white border-0 bg-primary;
 }
-.btn.solid:hover{
+.btn.solid:disabled{
+  @apply text-white border-0 bg-primary-disabled;
+}
+.btn.solid:not(.disabled):hover{
   @apply bg-primary-hover;
 }
-.btn.solid:active{
+.btn.solid:not(.disabled):active{
   @apply bg-primary-active;
 }
 .btn.ghost{
   @apply text-gray-500 bg-opacity-0 border-0 ;
+}
+.btn.ghost.disabled{
+  @apply text-gray-300;
 }
 .btn.ghost:not(.disabled):hover{
   background: rgb(236, 238, 241);
@@ -572,15 +578,12 @@
 .btn.ghost:not(.disabled):active{
   background: rgb(215, 218, 224);
 }
-.btn.ghost.disabled{
-  @apply text-gray-300;
-}
-.btn.ghost.disabled:hover{
+/* .btn.ghost.disabled:hover{
   background-color: transparent;
 }
 .btn.ghost.disabled:active{
   background-color: transparent;
-}
+} */
 /* .btn.ghost:hover{
   @apply bg-gray-100;
 }
