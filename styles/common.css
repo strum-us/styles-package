@@ -278,7 +278,8 @@
   max-height: 600px;
 }
 
-.modal.sm.calendar{
+.modal.calendar{
+  @apply py-8;
   min-width: 420px;
   max-width: 420px;
 }
