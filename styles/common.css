@@ -279,8 +279,8 @@
 }
 
 .modal.sm.calender{
-  min-width: 540px;
-  max-width: 540px;
+  min-width: 420px;
+  max-width: 420px;
 }
 
 
@@ -494,7 +494,7 @@
   @apply box-border flex flex-row items-center justify-center flex-grow-0 flex-shrink-0 h-10 px-4 space-x-2 text-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-lg cursor-pointer select-none max-w-max typo-small ;
 }
 .btn.disabled{
-  @apply text-gray-400 bg-gray-50;
+  @apply text-gray-400 cursor-not-allowed bg-gray-50;
 }
 .btn.round {
   @apply rounded-full;
