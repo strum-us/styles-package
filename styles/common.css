@@ -558,7 +558,7 @@
 .btn.solid{
   @apply text-white border-0 bg-primary;
 }
-.btn.solid:disabled{
+.btn.solid.disabled{
   @apply text-white border-0 bg-primary-disabled;
 }
 .btn.solid:not(.disabled):hover{
