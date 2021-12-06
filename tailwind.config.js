@@ -51,7 +51,7 @@ module.exports = {
       // gray: '#D4D4D8',
       white: '#ffffff',
       warn: '#F9B249',
-      success: '#4BD059',
+      success: '#41C950',
       // gray: {
       //   light: colors.gray[300],
       //   DEFAULT: colors.gray[400],
