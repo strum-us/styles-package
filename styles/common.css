@@ -507,7 +507,7 @@
   @apply w-full;
 }
 .btn:not(.disabled):hover{
-  @apply bg-gray-200;
+  @apply transition duration-300 delay-150 bg-gray-200;
 }
 .btn:not(.disabled):active{
   @apply bg-gray-300;
@@ -538,7 +538,7 @@
   @apply text-gray-400 bg-gray-50; 
 }
 .btn.negative:not(.disabled):hover{
-  @apply bg-red-100 border-negative text-negative; 
+  @apply transition duration-300 delay-150 bg-red-100 border-negative text-negative; 
 }
 .btn.negative:not(.disabled):active{
   @apply bg-red-200;
@@ -550,7 +550,7 @@
   @apply text-primary-disabled bg-complimentary border-primary-disabled;
 }
 .btn.primary:not(.disabled):hover{
-  @apply bg-blue-200 border-primary text-primary;
+  @apply transition duration-300 delay-150 bg-blue-200 border-primary text-primary;
 }
 .btn.primary:not(.disabled):active{
   @apply bg-blue-300;
@@ -562,7 +562,7 @@
   @apply text-white border-0 bg-primary-disabled;
 }
 .btn.solid:not(.disabled):hover{
-  @apply bg-primary-hover;
+  @apply transition duration-300 delay-150 bg-primary-hover;
 }
 .btn.solid:not(.disabled):active{
   @apply bg-primary-active;
@@ -575,6 +575,7 @@
 }
 .btn.ghost:not(.disabled):hover{
   background: rgb(236, 238, 241);
+  @apply transition duration-300 delay-150;
 }
 .btn.ghost:not(.disabled):active{
   background: rgb(215, 218, 224);
