@@ -152,6 +152,7 @@
 
 .typo-headtitle{
 @apply text-4xl;
+letter-spacing: -1px;
 }
 
 .bold {
