@@ -876,9 +876,9 @@ label:active:after {
 }
 
 .avatar-group .avatar.sm:not(:first-child) {
-  margin-left: -12px;
-  -webkit-mask:radial-gradient(circle 19px at -4px 50%,transparent 99%,#fff 100%);
-      mask:radial-gradient(circle 19px at -4px 50%,transparent 99%,#fff 100%);
+  margin-left: -10px;
+  -webkit-mask:radial-gradient(circle 13px at -1px 50%,transparent 99%,#fff 100%);
+      mask:radial-gradient(circle 13px at -1px 50%,transparent 99%,#fff 100%);
 }
 
 .avatar img {
@@ -910,10 +910,11 @@ label:active:after {
   @apply ml-0;
 }
 .avatar.circle{
-  @apply border-4 border-success;
+  @apply box-content border-4 border-success;
 }
 .avatar.noti{
   @apply relative;
+  
 }
 .avatar.online{
   @apply relative;
@@ -922,25 +923,33 @@ label:active:after {
   @apply relative;
 }
 
+
 .avatar.noti:after{
   content: '';
-  top: 1%;
-  right:1%;
-  @apply absolute z-10 block w-3 h-3 rounded-full shadow-md bg-negative;
+  top: -2px;
+  right: -2px;
+  @apply absolute z-10 block w-3 h-3 rounded-full bg-negative;
+  
 }
 
+.avatar.sm.noti:after{
+  content: '';
+  top: -3px;
+  right: -3px;
+  @apply absolute z-10 block w-3 h-3 rounded-full bg-negative;
+}
 .avatar.online:after{
   content: '';
-  bottom: 1%;
-  right:1%;
-  @apply absolute z-10 block w-3 h-3 rounded-full shadow-md bg-success;
+  bottom: 0px;
+  right:-3px;
+  @apply absolute z-10 block w-3 h-3 rounded-full bg-success;
 }
 
 .avatar.offline:after{
   content: '';
-  bottom: 1%;
-  right:1%;
-  @apply absolute z-10 block w-3 h-3 bg-gray-500 rounded-full shadow-md;
+  bottom: 0px;
+  right:-3px;
+  @apply absolute z-10 block w-3 h-3 bg-gray-500 rounded-full;
 }
 
 
