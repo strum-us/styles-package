@@ -1020,7 +1020,7 @@ label:active:after {
 }
 
 .attachment .close{
-  @apply absolute w-5 h-5 text-white rounded-full select-none bg-negative flex-row-center typo-tiny;
+  @apply absolute w-5 h-5 text-white rounded-full cursor-pointer select-none bg-negative flex-row-center typo-tiny;
   top: -6px;
   right: -6px;
   display:none;
