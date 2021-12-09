@@ -230,16 +230,16 @@ line-height: 47.5px;
 .modal .nav{
   width: 240px;
 }
-
+/* 
 .nav-header{
   @apply flex items-center h-16 px-5 space-x-2 text-black transition-all duration-200 cursor-pointer select-none typo-body;
-}
-.nav-header:hover{
+} */
+/* .nav-header:hover{
   @apply bg-gray-100;
 }
 .nav-header:active{
   @apply bg-gray-200;
-}
+} */
 .nav-section{
   @apply px-4 mt-4 mb-1 text-gray-700 select-none typo-tiny;
 }
@@ -253,15 +253,18 @@ line-height: 47.5px;
 .nav-footer:active{
   @apply bg-gray-200;
 } */
-.nav-item{
+/* .nav-item{
   @apply box-border text-black flex flex-row items-center h-10 px-5 space-x-1.5 cursor-pointer select-none;
   
+} */
+.nav-item{
+  @apply flex items-center px-5 space-x-2 text-black transition-all duration-200 cursor-pointer select-none h-14 typo-body; 
 }
 .nav-item:hover{
-  @apply text-white bg-primary bold;
+  @apply bg-gray-100;
 }
 .nav-item:active{
-  @apply bg-primary-dark ;
+  @apply bg-gray-200;
 }
 
 .nav-item-body{
@@ -876,7 +879,7 @@ label:active:after {
 }
 
 .avatar-group .avatar.sm:not(:first-child) {
-  margin-left: -10px;
+  margin-left: -9px;
   -webkit-mask:radial-gradient(circle 13px at -1px 50%,transparent 99%,#fff 100%);
       mask:radial-gradient(circle 13px at -1px 50%,transparent 99%,#fff 100%);
 }
