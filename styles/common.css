@@ -869,7 +869,10 @@ label:active:after {
 }
 
 .avatar.sm {
-  @apply inline-block w-6 h-6 overflow-hidden select-none;
+  @apply w-6 h-6;
+}
+.avatar.2xl {
+  @apply w-32 h-32;
 }
 
 .avatar-group .avatar.sm:not(:first-child) {
