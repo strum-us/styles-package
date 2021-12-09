@@ -258,7 +258,7 @@ line-height: 47.5px;
   
 } */
 .nav-item{
-  @apply flex items-center px-5 space-x-2 text-black transition-all duration-200 cursor-pointer select-none h-14 typo-body; 
+  @apply flex items-center px-5 space-x-2 text-gray-500 transition-all duration-200 cursor-pointer select-none hover:text-gray-700 h-14 typo-body; 
 }
 .nav-item:hover{
   @apply bg-gray-100;
