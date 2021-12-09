@@ -736,7 +736,7 @@ div[contenteditable=true]:focus {
 div[contenteditable=true]:empty:before{
   content: attr(placeholder);
   display: block;  
-  @apply text-gray-400;
+  @apply text-gray-400 cursor-text;
 }
 
 
@@ -905,6 +905,9 @@ label:active:after {
 .avatar.circle{
   @apply border-4 border-success;
 }
+.avatar.noti{
+  @apply relative;
+}
 .avatar.online{
   @apply relative;
 }
@@ -912,20 +915,34 @@ label:active:after {
   @apply relative;
 }
 
+.avatar.noti:after{
+  content: '';
+  top: 1%;
+  right:1%;
+  @apply absolute z-10 block w-3 h-3 rounded-full shadow-md bg-negative;
+}
 
 .avatar.online:after{
   content: '';
-  top: 1%;
+  bottom: 1%;
   right:1%;
   @apply absolute z-10 block w-3 h-3 rounded-full shadow-md bg-success;
 }
 
 .avatar.offline:after{
   content: '';
-  top: 1%;
+  bottom: 1%;
   right:1%;
-  @apply absolute z-10 block w-3 h-3 bg-gray-600 rounded-full shadow-md;
+  @apply absolute z-10 block w-3 h-3 bg-gray-500 rounded-full shadow-md;
 }
+
+
+
+
+
+
+
+
 
 
 
