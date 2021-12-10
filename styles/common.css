@@ -873,7 +873,7 @@ label:active:after {
 .avatar.sm {
   @apply w-6 h-6;
 }
-.avatar.2xl {
+.avatar.xxl {
   @apply w-32 h-32;
 }
 
