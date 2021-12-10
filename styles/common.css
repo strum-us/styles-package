@@ -297,8 +297,8 @@ line-height: 47.5px;
 }
 .modal.md{
   @apply py-8;
-  min-width: 600px;
-  max-width: 600px;
+  min-width: 520px;
+  max-width: 520px;
 }
 .modal.lg{
   min-width: 920px;
