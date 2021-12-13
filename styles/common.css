@@ -171,7 +171,7 @@ line-height: 47.5px;
 /* --------------------------------------------------------------------------------------------------------- */
 
 .icon-container{
-  @apply flex-grow-0 flex-shrink-0 w-5;
+  @apply flex-grow-0 flex-shrink-0 inline-block w-5;
 }
 .lg .icon-container{
   @apply w-6;
@@ -379,7 +379,7 @@ line-height: 47.5px;
 }
 
 .modal.sm .modal-body-footer{
-  @apply flex justify-end px-16 mt-10 space-x-3;
+  @apply flex justify-end px-16 mt-10 space-x-2;
 }
 .modal.md .modal-body-footer{
   @apply flex justify-end px-16 mt-10 space-x-3;
@@ -1016,6 +1016,10 @@ label:active:after {
 
 .attachment{
   @apply relative;
+}
+
+.attachment img{
+  @apply object-cover;
 }
 
 .attachment .close{
