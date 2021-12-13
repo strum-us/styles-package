@@ -1099,7 +1099,7 @@ label:active:after {
   @apply space-x-24 flex-row-center;
 }
 .step{
-  @apply relative w-10 h-10 bg-gray-100 rounded-full bold text-primary typo-small flex-row-center;
+  @apply relative w-10 h-10 bg-gray-100 rounded-full select-none bold text-primary typo-small flex-row-center;
 }
 .step.solid{
   @apply text-white bg-primary;
