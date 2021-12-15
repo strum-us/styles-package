@@ -479,27 +479,35 @@ line-height: 47.5px;
 .card{
   @apply flex flex-row overflow-hidden bg-white shadow-lg rounded-xl ;
 }
-.card.col{
+/* .card.col{
   @apply flex-col ;
-}
+} */
 .card-image{
   @apply flex-shrink-0;
 }
-.card.col .card-image{
-  @apply w-full;
+.card-image img{
+  @apply object-cover;
 }
+/* .card.col .card-image{
+  @apply w-full;
+} */
 .card-body{
   @apply flex flex-col w-full h-full px-6 py-5 place-content-between;
 }
-/* .card-body-title{
-  @apply text-black typo-body bold;
+
+.card-body header{
+  @apply flex flex-col space-y-2;
+}
+.card-body footer{
+  @apply flex flex-row place-content-between;
+}
+
+.card-body-title{
+  @apply font-semibold text-black typo-small;
 }
 .card-body-text{
-  @apply text-gray-800 typo-small;
+  @apply flex flex-row text-gray-500 typo-tiny place-content-between;
 }
-.card-body-text.sm{
-  @apply text-gray-600 typo-tiny;
-} */
 
 /* .card-image{
   background: url(../img/card-img.png) no-repeat center center;
