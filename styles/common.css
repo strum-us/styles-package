@@ -477,7 +477,7 @@ line-height: 47.5px;
 /* --------------------------------------------------------------------------------------------------------- */
 
 .card{
-  @apply flex flex-row overflow-hidden bg-white shadow-lg cursor-pointer hover:bg-gray-100 rounded-xl ;
+  @apply flex flex-row overflow-hidden bg-white shadow-lg cursor-pointer hover:bg-gray-50 rounded-xl ;
 }
 
 /* .card.col{
