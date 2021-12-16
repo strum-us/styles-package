@@ -477,8 +477,9 @@ line-height: 47.5px;
 /* --------------------------------------------------------------------------------------------------------- */
 
 .card{
-  @apply flex flex-row overflow-hidden bg-white shadow-lg rounded-xl ;
+  @apply flex flex-row overflow-hidden bg-white shadow-lg cursor-pointer hover:bg-gray-100 rounded-xl ;
 }
+
 /* .card.col{
   @apply flex-col ;
 } */
@@ -503,10 +504,10 @@ line-height: 47.5px;
 }
 
 .card-body-title{
-  @apply font-semibold text-black typo-small;
+  @apply font-semibold text-black select-none typo-small;
 }
 .card-body-text{
-  @apply flex flex-row text-gray-500 typo-tiny place-content-between;
+  @apply flex flex-row text-gray-500 select-none typo-tiny place-content-between;
 }
 
 /* .card-image{
