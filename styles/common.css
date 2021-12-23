@@ -879,8 +879,20 @@ label:active:after {
       mask:radial-gradient(circle 19px at -4px 50%,transparent 99%,#fff 100%);
 }
 
+.avatar.xxl {
+  @apply w-2 h-2
+}
+.avatar.xl {
+  @apply w-3 h-3
+}
+.avatar.s {
+  @apply w-4 h-4
+}
 .avatar.sm {
-  @apply w-6 h-6;
+  @apply w-6 h-6
+}
+.avatar.m {
+  @apply w-10 h-10
 }
 .avatar.xxl {
   @apply w-32 h-32;

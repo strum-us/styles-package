@@ -9,7 +9,7 @@
     "tailwindcss": "^2.2.2"
   },
   "scripts": {
-    "build:style": "tailwind build -i ./styles/index.css -o ./styles/tailwind.css",
+    "build:style": "tailwind build -i ./styles/common.css -o ./styles/tailwind.css",
     "start": "tailwind-watch"
   },
   "browserslist": {
