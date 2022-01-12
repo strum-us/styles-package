@@ -695,7 +695,13 @@ line-height: 47.5px;
   @apply relative;
 }
 
-
+.input.type-number::-webkit-outer-spin-button, 
+.input.type-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.input.type-number[type=number] {
+  -moz-appearance: textfield;
+}
 
 .input.lg{
   @apply h-12 typo-subtitle px-3
