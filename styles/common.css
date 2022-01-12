@@ -544,10 +544,10 @@ line-height: 47.5px;
 .btn.toggle span{
   @apply w-full;
 }
-.btn:not(.disabled):hover{
+.btn:not(.disabled):hover,  .btn.selected{
   @apply transition duration-150 delay-150 bg-gray-200;
 }
-.btn:not(.disabled):active{
+.btn:not(.disabled):active, .btn.selected{
   @apply bg-gray-300;
 }
 .btn.icon{
@@ -575,10 +575,10 @@ line-height: 47.5px;
 .btn.negative.disabled{
   @apply text-gray-400 bg-gray-50; 
 }
-.btn.negative:not(.disabled):hover{
+.btn.negative:not(.disabled):hover,  .btn.negative.selected{
   @apply  bg-red-100 border-negative text-negative; 
 }
-.btn.negative:not(.disabled):active{
+.btn.negative:not(.disabled):active, .btn.negative.selected{
   @apply bg-red-200;
 }
 .btn.primary{
@@ -587,10 +587,10 @@ line-height: 47.5px;
 .btn.primary.disabled{
   @apply text-primary-disabled bg-complimentary border-primary-disabled;
 }
-.btn.primary:not(.disabled):hover{
+.btn.primary:not(.disabled):hover,  .btn.primary.selected{
   @apply  bg-blue-200 border-primary text-primary;
 }
-.btn.primary:not(.disabled):active{
+.btn.primary:not(.disabled):active, .btn.primary.selected{
   @apply bg-blue-300;
 }
 .btn.solid{
@@ -599,10 +599,10 @@ line-height: 47.5px;
 .btn.solid.disabled{
   @apply text-white border-0 bg-primary-disabled;
 }
-.btn.solid:not(.disabled):hover{
+.btn.solid:not(.disabled):hover,  .btn.solid.selected{
   @apply  bg-primary-hover;
 }
-.btn.solid:not(.disabled):active{
+.btn.solid:not(.disabled):active, .btn.solid.selected{
   @apply bg-primary-active;
 }
 .btn.ghost{
@@ -611,10 +611,10 @@ line-height: 47.5px;
 .btn.ghost.disabled{
   @apply text-gray-300;
 }
-.btn.ghost:not(.disabled):hover{
+.btn.ghost:not(.disabled):hover ,  .btn.ghost.selected{
   background: rgb(236, 238, 241);
 }
-.btn.ghost:not(.disabled):active{
+.btn.ghost:not(.disabled):active, .btn.ghost.selected{
   background: rgb(215, 218, 224);
 }
 /* .btn.ghost.disabled:hover{
